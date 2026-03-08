@@ -1,0 +1,13 @@
+# Vivado auto-generated files
+*.jou
+*.log
+*.pb
+*.wdb
+*.str
+*.zip
+.Xil/
+
+# ビルド結果など（必要に応じて）
+*.bit
+*.bin
+output.hex
