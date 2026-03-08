@@ -1,0 +1,1215 @@
+Vivado Simulator 2020.2
+Time resolution is 1 fs
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.\temp_mon_enabled.u_tempmon .\xadc_supplied_temperature.XADC_inst  was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+
+############# Write Clocks PLLE2_ADV Parameters #############
+
+nCK_PER_CLK      =       4
+CLK_PERIOD       =    3077
+CLKIN1_PERIOD    =   3.077
+DIVCLK_DIVIDE    =       1
+CLKFBOUT_MULT    =       4
+VCO_PERIOD       =   769.0
+CLKOUT0_DIVIDE_F =       2
+CLKOUT1_DIVIDE   =       4
+CLKOUT2_DIVIDE   =      64
+CLKOUT3_DIVIDE   =      16
+CLKOUT0_PERIOD   =    1538
+CLKOUT1_PERIOD   =    3076
+CLKOUT2_PERIOD   =   49216
+CLKOUT3_PERIOD   =   12304
+CLKOUT4_PERIOD   =    6152
+############################################################
+
+############# MMCME2_ADV Parameters #############
+
+MMCM_MULT_F           =          14
+MMCM_VCO_FREQ (MHz)   = 1200.000
+MMCM_VCO_PERIOD       = 833.333
+#################################################
+
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : BYTE_LANES_B0 = f BYTE_LANES_B1 = 0 DATA_CTL_B0 = 5 DATA_CTL_B1 = 0
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_LANE =           4 HIGHEST_LANE_B0 =           4 HIGHEST_LANE_B1 =           0
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_BANK =           1
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : FREQ_REF_PERIOD         = 1538.00 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DDR_TCK                 = 3077 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_S2_TAPS_SIZE         = 12.02 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_EARLY       = 1 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_OFFSET      = 1610.30 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_META_ZONE   = 200.00 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_FINE_INTR_DLY   = 890.73 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_COARSE_INTR_DLY = 575.97 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_INTRINSIC_DELAY = 1466.70 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_DELAY       = 60 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_INTRINSIC_DELAY      = 1466.70 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_DELAY                = 2187.64 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_OCLK_DELAY           = 0 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : L_PHY_0_PO_FINE_DELAY   = 60 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG1_INTRINSIC_DELAY = 0.00 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_INTRINSIC_DELAY = 865.48 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_INTRINSIC_DELAY      = 865.48 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_MAX_STG2_DELAY       = 756.98 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_OFFSET               = 123.00 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_DELAY           = 123.00 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy :PI_STG2_DELAY_CAND       = 123.00 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DEFAULT_RCLK_DELAY      = 10 
+tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : RCLK_SELECT_EDGE        = 111 
+[735000.0 ps] FPGA Booted.
+[735000.0 ps] Waiting for 0x99 from FPGA...
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_ddr2_infrastructure.plle2_i are not same.
+[1575000.0 ps] Testbench Received byte: 99
+[1575000.0 ps] 0x99 Received!
+[1575000.0 ps] Waiting for DDR2 Calibration to complete...
+Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance tb_top.dut.cachecontroller_inst.dram_controller.mig.u_mig_7series_0_mig.u_ddr2_infrastructure.\gen_mmcm.mmcm_i  
+tb_top.u_comp_ddr2.cmd_task: at time 3369885.0 ps WARNING: 200 us is required before CKE goes active.
+tb_top.u_comp_ddr2.cmd_task: at time 10929537.0 ps INFO: Precharge All
+tb_top.u_comp_ddr2.cmd_task: at time 13529537.0 ps INFO: Load Mode 2
+tb_top.u_comp_ddr2.cmd_task: at time 13529537.0 ps INFO: Load Mode 2 High Temperature Self Refresh rate = 1X (0C-85C)
+tb_top.u_comp_ddr2.cmd_task: at time 16129537.0 ps INFO: Load Mode 3
+tb_top.u_comp_ddr2.cmd_task: at time 18729537.0 ps INFO: Load Mode 1
+tb_top.u_comp_ddr2.cmd_task: at time 18729537.0 ps INFO: Load Mode 1 DLL Enable = Enabled
+tb_top.u_comp_ddr2.cmd_task: at time 18729537.0 ps INFO: Load Mode 1 Output Drive Strength = Full
+tb_top.u_comp_ddr2.cmd_task: at time 18729537.0 ps INFO: Load Mode 1 ODT Rtt = 50 Ohm
+tb_top.u_comp_ddr2.cmd_task: at time 18729537.0 ps INFO: Load Mode 1 Additive Latency =           0
+tb_top.u_comp_ddr2.cmd_task: at time 18729537.0 ps INFO: Load Mode 1 OCD Program = OCD Exit
+tb_top.u_comp_ddr2.cmd_task: at time 18729537.0 ps INFO: Load Mode 1 DQS_N Enable = Enabled
+tb_top.u_comp_ddr2.cmd_task: at time 18729537.0 ps INFO: Load Mode 1 RDQS Enable = Disabled
+tb_top.u_comp_ddr2.cmd_task: at time 18729537.0 ps INFO: Load Mode 1 Output Enable = Enabled
+tb_top.u_comp_ddr2.cmd_task: at time 21329537.0 ps INFO: Load Mode 0
+tb_top.u_comp_ddr2.cmd_task: at time 21329537.0 ps INFO: Load Mode 0 Burst Length =  8
+tb_top.u_comp_ddr2.cmd_task: at time 21329537.0 ps INFO: Load Mode 0 Burst Order = Sequential
+tb_top.u_comp_ddr2.cmd_task: at time 21329537.0 ps INFO: Load Mode 0 CAS Latency =           5
+tb_top.u_comp_ddr2.cmd_task: at time 21329537.0 ps INFO: Load Mode 0 Test Mode = Normal
+tb_top.u_comp_ddr2.cmd_task: at time 21329537.0 ps INFO: Load Mode 0 DLL Reset = Reset DLL
+tb_top.u_comp_ddr2.cmd_task: at time 21329537.0 ps INFO: Load Mode 0 Write Recovery =           5
+tb_top.u_comp_ddr2.cmd_task: at time 21329537.0 ps INFO: Load Mode 0 Power Down Mode = Fast Exit
+tb_top.u_comp_ddr2.cmd_task: at time 23929537.0 ps INFO: Precharge All
+tb_top.u_comp_ddr2.cmd_task: at time 26529537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 29129537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 31729537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 34329537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 36929537.0 ps INFO: Load Mode 0
+tb_top.u_comp_ddr2.cmd_task: at time 36929537.0 ps INFO: Load Mode 0 Burst Length =  8
+tb_top.u_comp_ddr2.cmd_task: at time 36929537.0 ps INFO: Load Mode 0 Burst Order = Sequential
+tb_top.u_comp_ddr2.cmd_task: at time 36929537.0 ps INFO: Load Mode 0 CAS Latency =           5
+tb_top.u_comp_ddr2.cmd_task: at time 36929537.0 ps INFO: Load Mode 0 Test Mode = Normal
+tb_top.u_comp_ddr2.cmd_task: at time 36929537.0 ps INFO: Load Mode 0 DLL Reset = Normal
+tb_top.u_comp_ddr2.cmd_task: at time 36929537.0 ps INFO: Load Mode 0 Write Recovery =           5
+tb_top.u_comp_ddr2.cmd_task: at time 36929537.0 ps INFO: Load Mode 0 Power Down Mode = Fast Exit
+tb_top.u_comp_ddr2.cmd_task: at time 39529537.0 ps INFO: Load Mode 0
+tb_top.u_comp_ddr2.cmd_task: at time 39529537.0 ps INFO: Load Mode 0 Burst Length =  8
+tb_top.u_comp_ddr2.cmd_task: at time 39529537.0 ps INFO: Load Mode 0 Burst Order = Sequential
+tb_top.u_comp_ddr2.cmd_task: at time 39529537.0 ps INFO: Load Mode 0 CAS Latency =           5
+tb_top.u_comp_ddr2.cmd_task: at time 39529537.0 ps INFO: Load Mode 0 Test Mode = Normal
+tb_top.u_comp_ddr2.cmd_task: at time 39529537.0 ps INFO: Load Mode 0 DLL Reset = Normal
+tb_top.u_comp_ddr2.cmd_task: at time 39529537.0 ps INFO: Load Mode 0 Write Recovery =           5
+tb_top.u_comp_ddr2.cmd_task: at time 39529537.0 ps INFO: Load Mode 0 Power Down Mode = Fast Exit
+tb_top.u_comp_ddr2.cmd_task: at time 42129537.0 ps INFO: Load Mode 1
+tb_top.u_comp_ddr2.cmd_task: at time 42129537.0 ps INFO: Load Mode 1 DLL Enable = Enabled
+tb_top.u_comp_ddr2.cmd_task: at time 42129537.0 ps INFO: Load Mode 1 Output Drive Strength = Full
+tb_top.u_comp_ddr2.cmd_task: at time 42129537.0 ps INFO: Load Mode 1 ODT Rtt = 50 Ohm
+tb_top.u_comp_ddr2.cmd_task: at time 42129537.0 ps INFO: Load Mode 1 Additive Latency =           0
+tb_top.u_comp_ddr2.cmd_task: at time 42129537.0 ps INFO: Load Mode 1 OCD Program = OCD Default
+tb_top.u_comp_ddr2.cmd_task: at time 42129537.0 ps INFO: Load Mode 1 DQS_N Enable = Enabled
+tb_top.u_comp_ddr2.cmd_task: at time 42129537.0 ps INFO: Load Mode 1 RDQS Enable = Disabled
+tb_top.u_comp_ddr2.cmd_task: at time 42129537.0 ps INFO: Load Mode 1 Output Enable = Enabled
+PHY_INIT: Memory Initialization completed at 44600100.0 ps
+tb_top.u_comp_ddr2.cmd_task: at time 44729537.0 ps INFO: Load Mode 1
+tb_top.u_comp_ddr2.cmd_task: at time 44729537.0 ps INFO: Load Mode 1 DLL Enable = Enabled
+tb_top.u_comp_ddr2.cmd_task: at time 44729537.0 ps INFO: Load Mode 1 Output Drive Strength = Full
+tb_top.u_comp_ddr2.cmd_task: at time 44729537.0 ps INFO: Load Mode 1 ODT Rtt = 50 Ohm
+tb_top.u_comp_ddr2.cmd_task: at time 44729537.0 ps INFO: Load Mode 1 Additive Latency =           0
+tb_top.u_comp_ddr2.cmd_task: at time 44729537.0 ps INFO: Load Mode 1 OCD Program = OCD Exit
+tb_top.u_comp_ddr2.cmd_task: at time 44729537.0 ps INFO: Load Mode 1 DQS_N Enable = Enabled
+tb_top.u_comp_ddr2.cmd_task: at time 44729537.0 ps INFO: Load Mode 1 RDQS Enable = Disabled
+tb_top.u_comp_ddr2.cmd_task: at time 44729537.0 ps INFO: Load Mode 1 Output Enable = Enabled
+tb_top.u_comp_ddr2.cmd_task: at time 44729537.0 ps INFO: Initialization Sequence is complete
+tb_top.u_comp_ddr2.cmd_task: at time 47329537.0 ps INFO: Activate  bank 0 row 0000
+tb_top.u_comp_ddr2.cmd_task: at time 49929537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.cmd_task: at time 49949537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 49952037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49954537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49957037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49959537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49962037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49964537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49967037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49969537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 49969537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 49972037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49974537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49977037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49979537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49982037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49984537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49987037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49989537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 49989537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 49992037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49994537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49997037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 49999537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50002037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50004537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50007037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50009537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50009537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50012037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50014537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50017037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50019537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50022037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50024537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50027037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50029537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50029537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50032037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50034537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50037037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50039537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50042037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50044537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50047037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50049537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50049537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50052037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50054537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50057037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50059537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50062037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50064537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50067037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50069537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50069537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50072037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50074537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50077037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50079537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50082037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50084537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50087037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50089537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50089537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50092037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50094537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50097037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50099537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50102037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50104537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50107037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50109537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50109537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50112037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50114537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50117037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50119537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50122037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50124537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50127037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50129537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50129537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50132037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50134537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50137037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50139537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50142037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50144537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50147037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50149537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50149537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50152037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50154537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50157037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50159537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50162037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50164537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50167037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50169537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50169537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50172037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50174537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50177037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50179537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50182037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50184537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50187037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50189537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50189537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50192037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50194537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50197037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50199537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50202037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50204537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50207037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50209537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50209537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50212037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50214537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50217037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50219537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50222037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50224537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50227037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50229537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50229537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50232037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50234537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50237037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50239537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50242037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50244537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50247037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50249537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50249537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50252037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50254537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50257037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50259537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50262037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50264537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50267037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50269537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50269537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50272037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50274537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50277037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50279537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50282037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50284537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50287037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50289537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50289537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50292037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50294537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50297037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50299537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50302037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50304537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50307037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50309537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50309537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50312037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50314537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50317037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50319537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50322037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50324537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50327037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50329537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50329537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50332037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50334537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50337037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50339537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50342037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50344537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50347037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50349537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50349537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50352037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50354537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50357037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50359537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50362037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50364537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50367037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50369537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50369537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50372037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50374537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50377037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50379537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50382037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50384537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50387037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50389537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50389537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50392037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50394537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50397037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50399537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50402037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50404537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50407037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50409537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50409537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50412037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50414537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50417037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50419537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50422037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50424537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50427037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50429537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50429537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50432037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50434537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50437037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50439537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50442037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50444537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50447037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50449537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50449537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50452037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50454537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50457037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50459537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50462037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50464537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50467037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50469537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50469537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50472037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50474537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50477037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50479537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50482037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50484537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50487037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50489537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50489537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50492037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50494537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50497037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50499537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50502037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50504537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50507037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50509537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50509537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50512037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50514537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50517037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50519537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50522037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50524537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50527037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50529537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50529537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50532037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50534537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50537037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50539537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50542037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50544537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50547037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50549537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50549537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50552037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50554537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50557037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50559537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50562037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50564537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50567037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50569537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50569537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50572037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50574537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50577037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50579537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50582037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50584537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50587037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50589537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50589537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50592037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50594537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50597037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50599537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50602037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50604537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50607037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50609537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50609537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50612037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50614537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50617037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50619537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50622037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50624537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50627037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50629537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50629537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50632037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50634537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50637037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50639537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50642037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50644537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50647037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50649537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50649537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50652037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50654537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50657037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50659537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50662037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50664537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50667037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50669537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50669537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50672037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50674537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50677037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50679537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50682037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50684537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50687037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50689537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50689537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50692037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50694537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50697037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50699537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50702037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50704537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50707037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50709537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50709537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50712037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50714537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50717037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50719537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50722037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50724537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50727037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50729537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50729537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50732037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50734537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50737037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50739537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50742037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50744537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50747037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50749537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50749537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50752037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50754537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50757037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50759537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50762037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50764537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50767037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50769537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50769537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50772037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50774537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50777037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50779537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50782037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50784537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50787037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50789537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50789537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50792037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50794537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50797037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50799537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50802037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50804537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50807037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50809537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50809537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50812037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50814537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50817037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50819537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50822037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50824537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50827037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50829537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50829537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50832037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50834537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50837037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50839537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50842037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50844537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50847037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50849537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50849537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50852037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50854537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50857037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50859537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50862037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50864537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50867037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50869537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50869537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50872037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50874537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50877037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50879537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50882037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50884537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50887037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50889537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50889537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50892037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50894537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50897037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50899537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50902037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50904537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50907037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50909537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50909537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50912037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50914537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50917037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50919537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50922037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50924537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50927037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50929537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50929537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50932037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50934537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50937037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50939537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50942037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50944537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50947037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50949537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50949537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50952037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50954537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50957037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50959537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50962037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50964537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50967037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50969537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50969537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50972037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50974537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50977037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50979537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50982037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50984537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50987037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50989537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 50989537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 50992037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50994537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50997037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 50999537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51002037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51004537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51007037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51009537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51009537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51012037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51014537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51017037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51019537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51022037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51024537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51027037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51029537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51029537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51032037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51034537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51037037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51039537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51042037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51044537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51047037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51049537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51049537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51052037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51054537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51057037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51059537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51062037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51064537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51067037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51069537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51069537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51072037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51074537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51077037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51079537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51082037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51084537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51087037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51089537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51089537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51092037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51094537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51097037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51099537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51102037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51104537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51107037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51109537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51109537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51112037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51114537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51117037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51119537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51122037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51124537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51127037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51129537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51129537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51132037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51134537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51137037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51139537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51142037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51144537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51147037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51149537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51149537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51152037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51154537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51157037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51159537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51162037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51164537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51167037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51169537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51169537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51172037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51174537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51177037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51179537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51182037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51184537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51187037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51189537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51189537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51192037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51194537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51197037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51199537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51202037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51204537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51207037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51209537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51209537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51212037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51214537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51217037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51219537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+PHY_INIT: Phaser_In Phase Locked at 51220100.0 ps
+tb_top.u_comp_ddr2.data_task: at time 51222037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51224537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51227037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51229537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51229537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51232037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51234537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51237037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51239537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51242037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51244537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51247037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51249537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51249537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51252037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51254537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51257037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51259537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51262037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51264537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51267037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51269537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51269537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51272037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51274537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51277037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51279537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51282037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51284537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51287037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51289537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51289537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51292037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51294537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51297037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51299537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51302037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51304537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51307037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51309537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51309537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51312037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51314537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51317037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51319537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51322037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51324537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51327037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51329537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 51329537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 51332037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51334537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51337037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51339537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51342037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51344537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51347037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51349537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51352037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51354537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51357037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51359537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51362037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51364537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51367037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 51369537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 53929537.0 ps INFO: Precharge All
+tb_top.u_comp_ddr2.cmd_task: at time 56529537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 59129537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 61729537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 64329537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 66929537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 69529537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 72129537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 74729537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 77329537.0 ps INFO: Activate  bank 0 row 0000
+tb_top.u_comp_ddr2.cmd_task: at time 79929537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.cmd_task: at time 79949537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 79952037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79954537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79957037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79959537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79962037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79964537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79967037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79969537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 79969537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 79972037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79974537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79977037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79979537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79982037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79984537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79987037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79989537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 79989537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 79992037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79994537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79997037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 79999537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 80002037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 80004537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 80007037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 80009537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 80012037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 80014537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 80017037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 80019537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 80022037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 80024537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 80027037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 80029537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 82589537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.cmd_task: at time 82609537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 82612037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82614537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82617037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82619537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82622037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82624537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82627037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82629537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 82629537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 82632037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82634537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82637037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82639537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82642037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82644537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82647037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82649537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 82649537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 82652037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82654537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82657037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82659537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82662037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82664537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82667037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82669537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82672037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82674537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82677037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82679537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82682037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82684537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82687037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 82689537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 85249537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.cmd_task: at time 85269537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 85272037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85274537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85277037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85279537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85282037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85284537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85287037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85289537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 85289537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 85292037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85294537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85297037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85299537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85302037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85304537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85307037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85309537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 85309537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 85312037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85314537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85317037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85319537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85322037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85324537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85327037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85329537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85332037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85334537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85337037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85339537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85342037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85344537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85347037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 85349537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 87909537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.cmd_task: at time 87929537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 87932037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87934537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87937037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87939537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87942037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87944537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87947037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87949537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 87949537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 87952037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87954537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87957037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87959537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87962037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87964537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87967037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87969537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 87969537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 87972037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87974537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87977037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87979537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87982037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87984537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87987037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87989537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87992037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87994537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87997037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 87999537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 88002037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 88004537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 88007037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 88009537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 90569537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.cmd_task: at time 90589537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 90592037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90594537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90597037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90599537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90602037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90604537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90607037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90609537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 90609537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 90612037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90614537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90617037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90619537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90622037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90624537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90627037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90629537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 90629537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 90632037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90634537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90637037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90639537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90642037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90644537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90647037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90649537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90652037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90654537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90657037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90659537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90662037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90664537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90667037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 90669537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 93229537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.cmd_task: at time 93249537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 93252037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93254537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93257037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93259537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93262037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93264537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93267037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93269537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 93269537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 93272037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93274537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93277037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93279537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93282037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93284537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93287037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93289537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 93289537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 93292037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93294537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93297037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93299537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93302037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93304537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93307037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93309537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93312037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93314537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93317037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93319537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93322037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93324537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93327037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 93329537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 95889537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.cmd_task: at time 95909537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 95912037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95914537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95917037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95919537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95922037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95924537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95927037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95929537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 95929537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 95932037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95934537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95937037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95939537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95942037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95944537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95947037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95949537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 95949537.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 95952037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95954537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95957037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95959537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95962037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95964537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95967037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95969537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95972037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95974537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95977037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95979537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95982037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95984537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95987037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 95989537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+PHY_INIT: Phaser_In DQSFOUND completed at 96180100.0 ps
+tb_top.u_comp_ddr2.cmd_task: at time 98549537.0 ps INFO: Precharge All
+tb_top.u_comp_ddr2.cmd_task: at time 101149537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 103749537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 106349537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 108949537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 111549537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 114149537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 116749537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 119349537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 121949537.0 ps INFO: Activate  bank 0 row 0000
+tb_top.u_comp_ddr2.cmd_task: at time 124549537.0 ps INFO: Write     bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.main: at time 124559537.0 ps INFO: Sync On Die Termination = 1
+tb_top.u_comp_ddr2.cmd_task: at time 124569537.0 ps INFO: Write     bank 0 col 008, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 124572037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000000 data = 9999
+tb_top.u_comp_ddr2.data_task: at time 124574537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000001 data = 3333
+tb_top.u_comp_ddr2.data_task: at time 124577037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000002 data = 7777
+tb_top.u_comp_ddr2.data_task: at time 124579537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000003 data = eeee
+tb_top.u_comp_ddr2.data_task: at time 124582037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000004 data = cccc
+tb_top.u_comp_ddr2.data_task: at time 124584537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000005 data = 9999
+tb_top.u_comp_ddr2.data_task: at time 124587037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000006 data = 2222
+tb_top.u_comp_ddr2.data_task: at time 124589537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000007 data = 4444
+tb_top.u_comp_ddr2.cmd_task: at time 124589537.0 ps INFO: Write     bank 0 col 010, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 124592037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000008 data = bbbb
+tb_top.u_comp_ddr2.data_task: at time 124594537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000009 data = 1111
+tb_top.u_comp_ddr2.data_task: at time 124597037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000a data = 7777
+tb_top.u_comp_ddr2.data_task: at time 124599537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000b data = eeee
+tb_top.u_comp_ddr2.data_task: at time 124602037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000c data = cccc
+tb_top.u_comp_ddr2.data_task: at time 124604537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000d data = 9999
+tb_top.u_comp_ddr2.data_task: at time 124607037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000e data = 2222
+tb_top.u_comp_ddr2.data_task: at time 124609537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000f data = 4444
+tb_top.u_comp_ddr2.cmd_task: at time 124609537.0 ps INFO: Write     bank 0 col 018, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 124612037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000010 data = bbbb
+tb_top.u_comp_ddr2.data_task: at time 124614537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000011 data = 1111
+tb_top.u_comp_ddr2.data_task: at time 124617037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000012 data = 7777
+tb_top.u_comp_ddr2.data_task: at time 124619537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000013 data = eeee
+tb_top.u_comp_ddr2.data_task: at time 124622037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000014 data = cccc
+tb_top.u_comp_ddr2.data_task: at time 124624537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000015 data = 9999
+tb_top.u_comp_ddr2.data_task: at time 124627037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000016 data = 2222
+tb_top.u_comp_ddr2.data_task: at time 124629537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000017 data = 4444
+tb_top.u_comp_ddr2.data_task: at time 124632037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000018 data = bbbb
+tb_top.u_comp_ddr2.data_task: at time 124634537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000019 data = 1111
+tb_top.u_comp_ddr2.data_task: at time 124637037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001a data = 7777
+tb_top.u_comp_ddr2.data_task: at time 124639537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001b data = eeee
+tb_top.u_comp_ddr2.data_task: at time 124642037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001c data = cccc
+tb_top.u_comp_ddr2.data_task: at time 124644537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001d data = 9999
+tb_top.u_comp_ddr2.data_task: at time 124647037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001e data = 2222
+tb_top.u_comp_ddr2.data_task: at time 124649537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001f data = 4444
+tb_top.u_comp_ddr2.main: at time 127222037.0 ps INFO: Sync On Die Termination = 0
+tb_top.u_comp_ddr2.cmd_task: at time 130229537.0 ps INFO: Precharge All
+tb_top.u_comp_ddr2.cmd_task: at time 132829537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 135429537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 138029537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 140629537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 143229537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 145829537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 148429537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 151029537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 153629537.0 ps INFO: Activate  bank 0 row 0000
+PHY_INIT: Read Leveling Stage 1 completed at 156420100.0 ps
+PHY_INIT : PRBS/PER_BIT calibration completed at 156420100.0 ps
+PHY_INIT : COMPLEX OCLKDELAY calibration completed at 156420100.0 ps
+tb_top.u_comp_ddr2.cmd_task: at time 161349537.0 ps INFO: Precharge All
+tb_top.u_comp_ddr2.cmd_task: at time 164154537.0 ps INFO: Refresh  
+tb_top.u_comp_ddr2.cmd_task: at time 164374537.0 ps INFO: Activate  bank 0 row 0000
+tb_top.u_comp_ddr2.cmd_task: at time 164489537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.cmd_task: at time 164509537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 164512037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = 9999
+tb_top.u_comp_ddr2.data_task: at time 164514537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = 3333
+tb_top.u_comp_ddr2.data_task: at time 164517037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = 7777
+tb_top.u_comp_ddr2.data_task: at time 164519537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = eeee
+tb_top.u_comp_ddr2.data_task: at time 164522037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = cccc
+tb_top.u_comp_ddr2.data_task: at time 164524537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = 9999
+tb_top.u_comp_ddr2.data_task: at time 164527037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = 2222
+tb_top.u_comp_ddr2.data_task: at time 164529537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = 4444
+tb_top.u_comp_ddr2.data_task: at time 164532037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = 9999
+tb_top.u_comp_ddr2.data_task: at time 164534537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = 3333
+tb_top.u_comp_ddr2.data_task: at time 164537037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = 7777
+tb_top.u_comp_ddr2.data_task: at time 164539537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = eeee
+tb_top.u_comp_ddr2.data_task: at time 164542037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = cccc
+tb_top.u_comp_ddr2.data_task: at time 164544537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = 9999
+tb_top.u_comp_ddr2.data_task: at time 164547037.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = 2222
+tb_top.u_comp_ddr2.data_task: at time 164549537.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = 4444
+tb_top.u_comp_ddr2.cmd_task: at time 164579537.0 ps INFO: Precharge bank 0
+[164880000.0 ps] DDR2 Ready! Start sending program.
+[164880000.0 ps] Sending program size: 60 bytes
+[168155000.0 ps] Sending program data...
+[171435000.0 ps] Sent word[0]: 3c080100
+tb_top.u_comp_ddr2.cmd_task: at time 171874537.0 ps INFO: Activate  bank 0 row 0020
+tb_top.u_comp_ddr2.cmd_task: at time 171909537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 171932037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 171934537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 171937037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 171939537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 171942037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 171944537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 171947037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 171949537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 171979537.0 ps INFO: Precharge bank 0
+[174715000.0 ps] Sent word[1]: 3c093f80
+tb_top.u_comp_ddr2.cmd_task: at time 176014537.0 ps INFO: Refresh  
+[177995000.0 ps] Sent word[2]: ad090000
+[181275000.0 ps] Sent word[3]: 3c0a4000
+[184555000.0 ps] Sent word[4]: 354a0042
+tb_top.u_comp_ddr2.cmd_task: at time 184994537.0 ps INFO: Activate  bank 0 row 0020
+tb_top.u_comp_ddr2.cmd_task: at time 185029537.0 ps INFO: Read      bank 0 col 010, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 185052037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000010 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 185054537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000011 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 185057037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000012 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 185059537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000013 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 185062037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000014 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 185064537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000015 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 185067037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000016 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 185069537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000017 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 185099537.0 ps INFO: Precharge bank 0
+[187835000.0 ps] Sent word[5]: ad0a0004
+tb_top.u_comp_ddr2.cmd_task: at time 187854537.0 ps INFO: Refresh  
+[191115000.0 ps] Sent word[6]: c5000000
+[194395000.0 ps] Sent word[7]: c5010004
+[197675000.0 ps] Sent word[8]: 3c0cffff
+tb_top.u_comp_ddr2.cmd_task: at time 198114537.0 ps INFO: Activate  bank 0 row 0020
+tb_top.u_comp_ddr2.cmd_task: at time 198149537.0 ps INFO: Read      bank 0 col 020, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 198172037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000020 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 198174537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000021 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 198177037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000022 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 198179537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000023 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 198182037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000024 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 198184537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000025 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 198187037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000026 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 198189537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000027 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 198219537.0 ps INFO: Precharge bank 0
+tb_top.u_comp_ddr2.cmd_task: at time 199694537.0 ps INFO: Refresh  
+[200955000.0 ps] Sent word[9]: 46010080
+[204235000.0 ps] Sent word[10]: e5020008
+[207515000.0 ps] Sent word[11]: 8d0b0008
+[210795000.0 ps] Sent word[12]: ad8b0000
+tb_top.u_comp_ddr2.cmd_task: at time 211234537.0 ps INFO: Activate  bank 0 row 0020
+tb_top.u_comp_ddr2.cmd_task: at time 211269537.0 ps INFO: Read      bank 0 col 030, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 211292037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000030 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 211294537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000031 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 211297037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000032 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 211299537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000033 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 211302037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000034 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 211304537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000035 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 211307037.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000036 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 211309537.0 ps INFO: READ @ DQS= bank = 0 row = 0020 col = 00000037 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 211339537.0 ps INFO: Precharge bank 0
+tb_top.u_comp_ddr2.cmd_task: at time 211534537.0 ps INFO: Refresh  
+[214075000.0 ps] Sent word[13]: 1000ffff
+[217355000.0 ps] Sent word[14]: 00000000
+[217355000.0 ps] Program data sent!
+[217355000.0 ps] Waiting for 0xaa from FPGA...
+tb_top.u_comp_ddr2.cmd_task: at time 218034537.0 ps INFO: Activate  bank 0 row 0020
+tb_top.u_comp_ddr2.cmd_task: at time 218069537.0 ps INFO: Write     bank 0 col 000, auto precharge 1
+tb_top.u_comp_ddr2.main: at time 218079537.0 ps INFO: Sync On Die Termination = 1
+tb_top.u_comp_ddr2.data_task: at time 218092037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0020 col = 00000000 data = 0100
+tb_top.u_comp_ddr2.data_task: at time 218094537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0020 col = 00000001 data = 3c08
+tb_top.u_comp_ddr2.data_task: at time 218097037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0020 col = 00000002 data = 3f80
+tb_top.u_comp_ddr2.data_task: at time 218099537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0020 col = 00000003 data = 3c09
+tb_top.u_comp_ddr2.data_task: at time 218102037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0020 col = 00000004 data = 0000
+tb_top.u_comp_ddr2.data_task: at time 218104537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0020 col = 00000005 data = ad09
+tb_top.u_comp_ddr2.data_task: at time 218107037.0 ps INFO: WRITE @ DQS= bank = 0 row = 0020 col = 00000006 data = 4000
+tb_top.u_comp_ddr2.data_task: at time 218109537.0 ps INFO: WRITE @ DQS= bank = 0 row = 0020 col = 00000007 data = 3c0a
+tb_top.u_comp_ddr2.main: at time 218122037.0 ps INFO: Sync On Die Termination = 0
+tb_top.u_comp_ddr2.main: at time 218134537.0 ps INFO: Auto Precharge bank           0
+tb_top.u_comp_ddr2.cmd_task: at time 218214537.0 ps INFO: Activate  bank 0 row 0800
+[218235000.0 ps] 0xaa Received! Bootloader finished. CPU is running FPU Test...
+[218235000.0 ps] Waiting for FPU result (Expected: 0x42)...
+tb_top.u_comp_ddr2.cmd_task: at time 218249537.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+tb_top.u_comp_ddr2.data_task: at time 218272037.0 ps INFO: READ @ DQS= bank = 0 row = 0800 col = 00000000 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 218274537.0 ps INFO: READ @ DQS= bank = 0 row = 0800 col = 00000001 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 218277037.0 ps INFO: READ @ DQS= bank = 0 row = 0800 col = 00000002 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 218279537.0 ps INFO: READ @ DQS= bank = 0 row = 0800 col = 00000003 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 218282037.0 ps INFO: READ @ DQS= bank = 0 row = 0800 col = 00000004 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 218284537.0 ps INFO: READ @ DQS= bank = 0 row = 0800 col = 00000005 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 218287037.0 ps INFO: READ @ DQS= bank = 0 row = 0800 col = 00000006 data = xxxx
+tb_top.u_comp_ddr2.data_task: at time 218289537.0 ps INFO: READ @ DQS= bank = 0 row = 0800 col = 00000007 data = xxxx
+tb_top.u_comp_ddr2.cmd_task: at time 218319537.0 ps INFO: Precharge bank 0
+==================================================
+[219825000.0 ps] ★★★ FPGA Result: 42 ★★★
+[219825000.0 ps] >>> SUCCESS! FPU fadd is working perfectly! <<<
+==================================================
+$finish called at time : 219825 ns : File "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/tb_top.sv" Line 160

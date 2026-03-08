@@ -1,0 +1,85 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ALUControl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/FPU_Top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPU_Top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ForwardingUnit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardingUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/HazardDetectionUnit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HazardDetectionUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/InstructionMemory_readmemh.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory_readmemh
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS_CPU
+INFO: [VRFC 10-2458] undeclared symbol data_addr, assumed default net type wire [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:99]
+INFO: [VRFC 10-2458] undeclared symbol data_wdata, assumed default net type wire [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:100]
+INFO: [VRFC 10-2458] undeclared symbol RegWrite_wb, assumed default net type wire [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:148]
+INFO: [VRFC 10-2458] undeclared symbol Write_Addr_wb, assumed default net type wire [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:149]
+INFO: [VRFC 10-2458] undeclared symbol write_data_wb, assumed default net type wire [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:150]
+INFO: [VRFC 10-2458] undeclared symbol RegWrite_mem, assumed default net type wire [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:211]
+INFO: [VRFC 10-2458] undeclared symbol Write_Addr_mem, assumed default net type wire [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:211]
+WARNING: [VRFC 10-2938] 'RegWrite_mem' is already implicitly declared on line 211 [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:353]
+WARNING: [VRFC 10-2938] 'Write_Addr_mem' is already implicitly declared on line 211 [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:354]
+WARNING: [VRFC 10-2938] 'data_addr' is already implicitly declared on line 99 [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:377]
+WARNING: [VRFC 10-2938] 'RegWrite_wb' is already implicitly declared on line 148 [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:415]
+WARNING: [VRFC 10-2938] 'Write_Addr_wb' is already implicitly declared on line 149 [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:416]
+WARNING: [VRFC 10-2938] 'write_data_wb' is already implicitly declared on line 150 [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:434]
+WARNING: [VRFC 10-3380] identifier 'MemRead_mem' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:47]
+WARNING: [VRFC 10-3380] identifier 'is_jr_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:80]
+WARNING: [VRFC 10-3380] identifier 'Jump_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:81]
+WARNING: [VRFC 10-3380] identifier 'branch_cond_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:82]
+WARNING: [VRFC 10-3380] identifier 'ALU_Result_mem' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:218]
+WARNING: [VRFC 10-3380] identifier 'ALU_Result_mem' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:221]
+WARNING: [VRFC 10-3380] identifier 'Mem_ReadData_wb' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:303]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MainController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/PipelineRegister_EX_MEM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineRegister_EX_MEM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/PipelineRegister_ID_EX.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineRegister_ID_EX
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/PipelineRegister_IF_ID.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineRegister_IF_ID
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/PipelineRegister_MEM_WB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineRegister_MEM_WB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ProgramCounter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/RegisterFile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/cache_g.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+WARNING: [VRFC 10-3380] identifier 'state' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/cache_g.sv:17]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/cachecontroller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cachecontroller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_buf.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram_buf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram_controller
+WARNING: [VRFC 10-3380] identifier 'state' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_controller.sv:88]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fadd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fadd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fdiv_10.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fdiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fdiv_mantissa_10.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fdiv_mantissa
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ffloor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ffloor
+WARNING: [VRFC 10-3824] variable 'shift_amt' must explicitly be declared as automatic or static [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ffloor.sv:33]
+WARNING: [VRFC 10-3824] variable 'mask' must explicitly be declared as automatic or static [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ffloor.sv:34]
+WARNING: [VRFC 10-3824] variable 'frac_trunc' must explicitly be declared as automatic or static [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ffloor.sv:35]
+WARNING: [VRFC 10-3824] variable 'frac_added' must explicitly be declared as automatic or static [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ffloor.sv:39]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fmul.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fsqrt_10.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsqrt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ftoi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ftoi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/itof_without_fadd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module itof
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/master_fifo_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3380] identifier 'is_uart_addr' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/top.sv:55]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/tb_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+WARNING: [VRFC 10-3824] variable 'word' must explicitly be declared as automatic or static [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/tb_top.sv:117]

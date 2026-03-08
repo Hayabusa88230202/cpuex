@@ -1,0 +1,53 @@
+$date
+        2025-Dec-16 16:16:18
+$end
+$version
+        Vivado v2020.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 4 " mips_core/alu_control_ex [3:0] $end
+$var reg 32 & mips_core/alu_input_b_ex [31:0] $end
+$var reg 32 F mips_core/alu_input_a_ex [31:0] $end
+$var reg 5 f mips_core/Write_Addr_mem [4:0] $end
+$var reg 2 k mips_core/forward_b [1:0] $end
+$var reg 2 m mips_core/forward_a [1:0] $end
+$var reg 32 o mips_core/instruction_id [31:0] $end
+$var reg 32 1" mips_core/pc_current [31:0] $end
+$var reg 5 Q" mips_core/Write_Addr_wb [4:0] $end
+$var reg 5 V" mips_core/rt_addr_ex [4:0] $end
+$var reg 5 [" mips_core/rs_addr_ex [4:0] $end
+$var reg 1 `" mips_core/branch_cond_ex $end
+$var reg 1 a" mips_core/RegWrite_mem $end
+$var reg 1 b" mips_core/RegWrite_wb $end
+$var reg 1 c" mips_core/zero_flag_ex $end
+$var reg 1 d" _TRIGGER $end
+$var reg 1 e" _WINDOW $end
+$var reg 1 f" _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100 "
+b100 &
+b1111111111111111111111111111100 F
+b11111 f
+b0 k
+b0 m
+b1100000100000000000000000001 o
+b10000000000000001110100 1"
+b10 Q"
+b11101 V"
+b11101 ["
+0`"
+0a"
+1b"
+0c"
+0d"
+1e"
+0f"
+$end
+#512
+1d"

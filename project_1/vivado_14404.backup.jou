@@ -1,0 +1,263 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Feb 15 19:41:53 2026
+# Process ID: 14404
+# Current directory: C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10184 C:\Users\hayab\CPU_EXPERIMENT\CPU_CORE_SINGLE_PIPELINE_cashe\project_1\project_1.xpr
+# Log file: C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/vivado.log
+# Journal file: C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/uart_rx_inst/clk}} {{/tb_top/uart_rx_inst/rst}} {{/tb_top/uart_rx_inst/rx_in}} {{/tb_top/uart_rx_inst/rd_en}} {{/tb_top/uart_rx_inst/data_out}} {{/tb_top/uart_rx_inst/data_valid}} {{/tb_top/uart_rx_inst/state}} {{/tb_top/uart_rx_inst/bit_idx}} {{/tb_top/uart_rx_inst/clk_cnt}} {{/tb_top/uart_rx_inst/rx_shift}} {{/tb_top/uart_rx_inst/holding_reg}} {{/tb_top/uart_rx_inst/has_data}} {{/tb_top/uart_rx_inst/CLK_FREQ}} {{/tb_top/uart_rx_inst/CLOCKS_PER_BIT}} {{/tb_top/uart_rx_inst/S_IDLE}} {{/tb_top/uart_rx_inst/S_START}} {{/tb_top/uart_rx_inst/S_DATA}} {{/tb_top/uart_rx_inst/S_STOP}} {{/tb_top/uart_rx_inst/S_STOP[2]}} {{/tb_top/uart_rx_inst/S_STOP[1]}} {{/tb_top/uart_rx_inst/S_STOP[0]}} 
+current_wave_config {tb_top_behav.wcfg}
+log_wave {/tb_top/uart_rx_inst/clk} {/tb_top/uart_rx_inst/rst} {/tb_top/uart_rx_inst/rx_in} {/tb_top/uart_rx_inst/rd_en} {/tb_top/uart_rx_inst/data_out} {/tb_top/uart_rx_inst/data_valid} {/tb_top/uart_rx_inst/state} {/tb_top/uart_rx_inst/bit_idx} {/tb_top/uart_rx_inst/clk_cnt} {/tb_top/uart_rx_inst/rx_shift} {/tb_top/uart_rx_inst/holding_reg} {/tb_top/uart_rx_inst/has_data} {/tb_top/uart_rx_inst/CLK_FREQ} {/tb_top/uart_rx_inst/CLOCKS_PER_BIT} {/tb_top/uart_rx_inst/S_IDLE} {/tb_top/uart_rx_inst/S_START} {/tb_top/uart_rx_inst/S_DATA} {/tb_top/uart_rx_inst/S_STOP} {/tb_top/uart_rx_inst/S_STOP[2]} {/tb_top/uart_rx_inst/S_STOP[1]} {/tb_top/uart_rx_inst/S_STOP[0]} 
+save_wave_config {C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {100.000} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.MMCM_CLKOUT1_DIVIDE {10} CONFIG.CLKOUT1_JITTER {114.829} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {130.958} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_ips clk_wiz_0]
+generate_target all [get_files  C:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files C:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs clk_wiz_0_synth_1 -jobs 6
+wait_on_run clk_wiz_0_synth_1
+export_simulation -of_objects [get_files C:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0.xci] -directory C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+save_wave_config {C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/uart_tx_inst/clk}} {{/tb_top/uart_tx_inst/rst}} {{/tb_top/uart_tx_inst/data_in}} {{/tb_top/uart_tx_inst/tx_enable}} {{/tb_top/uart_tx_inst/tx_out}} {{/tb_top/uart_tx_inst/tx_busy}} {{/tb_top/uart_tx_inst/tx_ready}} {{/tb_top/uart_tx_inst/state}} {{/tb_top/uart_tx_inst/bit_idx}} {{/tb_top/uart_tx_inst/tx_data}} {{/tb_top/uart_tx_inst/clk_cnt}} {{/tb_top/uart_tx_inst/prev_tx_enable}} {{/tb_top/uart_tx_inst/tx_trigger}} {{/tb_top/uart_tx_inst/CLK_FREQ}} {{/tb_top/uart_tx_inst/CLOCKS_PER_BIT}} {{/tb_top/uart_tx_inst/S_IDLE}} {{/tb_top/uart_tx_inst/S_START}} {{/tb_top/uart_tx_inst/S_DATA}} {{/tb_top/uart_tx_inst/S_STOP}} 
+current_wave_config {tb_top_behav.wcfg}
+log_wave {/tb_top/uart_tx_inst/clk} {/tb_top/uart_tx_inst/rst} {/tb_top/uart_tx_inst/data_in} {/tb_top/uart_tx_inst/tx_enable} {/tb_top/uart_tx_inst/tx_out} {/tb_top/uart_tx_inst/tx_busy} {/tb_top/uart_tx_inst/tx_ready} {/tb_top/uart_tx_inst/state} {/tb_top/uart_tx_inst/bit_idx} {/tb_top/uart_tx_inst/tx_data} {/tb_top/uart_tx_inst/clk_cnt} {/tb_top/uart_tx_inst/prev_tx_enable} {/tb_top/uart_tx_inst/tx_trigger} {/tb_top/uart_tx_inst/CLK_FREQ} {/tb_top/uart_tx_inst/CLOCKS_PER_BIT} {/tb_top/uart_tx_inst/S_IDLE} {/tb_top/uart_tx_inst/S_START} {/tb_top/uart_tx_inst/S_DATA} {/tb_top/uart_tx_inst/S_STOP} 
+save_wave_config {C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+update_compile_order -fileset sources_1
+launch_simulation
+relaunch_sim
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+save_wave_config {C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+save_wave_config {C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+save_wave_config {C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+save_wave_config {C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+save_wave_config {C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/dut/cachecontroller_inst/cache_inst}} 
+save_wave_config {C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg}
+close_sim
+add_files -norecurse C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ffloor.sv
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/tb_top.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/tb_top.sv
+set_property is_enabled false [get_files  C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/top.sv]
+set_property is_enabled true [get_files  C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/top.sv]
+set_property is_enabled false [get_files  C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/top.sv]
+update_compile_order -fileset sources_1
+set_property is_enabled true [get_files  C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/top.sv]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+add_files -norecurse C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/tb_top.sv
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/dut/cachecontroller_inst/dram_buf/request_fifo/wr_en}} {{/tb_top/dut/cachecontroller_inst/dram_buf/request_fifo/rd_en}} {{/tb_top/dut/cachecontroller_inst/dram_buf/request_fifo/full}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/dut/cachecontroller_inst/dram_buf/request_fifo/wr_en}} {{/tb_top/dut/cachecontroller_inst/dram_buf/request_fifo/rd_en}} {{/tb_top/dut/cachecontroller_inst/dram_buf/request_fifo/full}} 
+current_wave_config {tb_top_behav.wcfg}
+log_wave {/tb_top/dut/cachecontroller_inst/dram_buf/request_fifo/wr_en} {/tb_top/dut/cachecontroller_inst/dram_buf/request_fifo/rd_en} {/tb_top/dut/cachecontroller_inst/dram_buf/request_fifo/full} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/dut/cachecontroller_inst/dram_buf/response_fifo/wr_en}} {{/tb_top/dut/cachecontroller_inst/dram_buf/response_fifo/rd_en}} {{/tb_top/dut/cachecontroller_inst/dram_buf/response_fifo/full}} 
+current_wave_config {tb_top_behav.wcfg}
+log_wave {/tb_top/dut/cachecontroller_inst/dram_buf/response_fifo/wr_en} {/tb_top/dut/cachecontroller_inst/dram_buf/response_fifo/rd_en} {/tb_top/dut/cachecontroller_inst/dram_buf/response_fifo/full} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/dut/cachecontroller_inst/dram_controller/state}} 
+current_wave_config {tb_top_behav.wcfg}
+log_wave {/tb_top/dut/cachecontroller_inst/dram_controller/state} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/dut/cachecontroller_inst/dram_controller/mig/app_rdy}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/dut/cachecontroller_inst/dram_controller/mig/app_en}} {{/tb_top/dut/cachecontroller_inst/dram_controller/mig/app_wdf_wren}} {{/tb_top/dut/cachecontroller_inst/dram_controller/mig/app_rdy}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/dut/cachecontroller_inst/dram_controller/mig/app_en}} {{/tb_top/dut/cachecontroller_inst/dram_controller/mig/app_wdf_wren}} {{/tb_top/dut/cachecontroller_inst/dram_controller/mig/app_rdy}} 
+current_wave_config {tb_top_behav.wcfg}
+add_wave {{/tb_top/dut/cachecontroller_inst/dram_controller/mig/app_en}} {{/tb_top/dut/cachecontroller_inst/dram_controller/mig/app_wdf_wren}} {{/tb_top/dut/cachecontroller_inst/dram_controller/mig/app_rdy}} 
+current_wave_config {tb_top_behav.wcfg}
+log_wave {/tb_top/dut/cachecontroller_inst/dram_controller/mig/app_en} {/tb_top/dut/cachecontroller_inst/dram_controller/mig/app_wdf_wren} {/tb_top/dut/cachecontroller_inst/dram_controller/mig/app_rdy} 
+relaunch_sim
