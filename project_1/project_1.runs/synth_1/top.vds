@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Mar  9 15:13:24 2026
-# Process ID: 47512
+# Start of session at: Mon Mar  9 22:13:16 2026
+# Process ID: 31684
 # Current directory: C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/top.vds
@@ -17,25 +17,25 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 43144
-WARNING: [Synth 8-992] RegWrite_mem is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:203]
-WARNING: [Synth 8-992] Write_Addr_mem is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:204]
-WARNING: [Synth 8-992] data_addr is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:211]
-WARNING: [Synth 8-992] data_wdata is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:211]
-WARNING: [Synth 8-992] RegWrite_wb is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:223]
-WARNING: [Synth 8-992] Write_Addr_wb is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:224]
-WARNING: [Synth 8-992] write_data_wb is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:228]
+INFO: [Synth 8-7075] Helper process launched with PID 31752
+WARNING: [Synth 8-992] RegWrite_mem is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:210]
+WARNING: [Synth 8-992] Write_Addr_mem is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:211]
+WARNING: [Synth 8-992] data_addr is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:218]
+WARNING: [Synth 8-992] data_wdata is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:218]
+WARNING: [Synth 8-992] RegWrite_wb is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:230]
+WARNING: [Synth 8-992] Write_Addr_wb is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:231]
+WARNING: [Synth 8-992] write_data_wb is already implicitly declared earlier [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:235]
 WARNING: [Synth 8-6901] identifier 'MemRead_mem' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:30]
 WARNING: [Synth 8-6901] identifier 'MemWrite_mem' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:30]
-WARNING: [Synth 8-6901] identifier 'is_jr_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:57]
-WARNING: [Synth 8-6901] identifier 'alu_input_a_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:57]
-WARNING: [Synth 8-6901] identifier 'Jump_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:58]
-WARNING: [Synth 8-6901] identifier 'jump_target_addr_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:58]
-WARNING: [Synth 8-6901] identifier 'branch_cond_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:59]
-WARNING: [Synth 8-6901] identifier 'branch_target_addr_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:59]
-WARNING: [Synth 8-6901] identifier 'ALU_Result_mem' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:121]
-WARNING: [Synth 8-6901] identifier 'ALU_Result_mem' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:122]
-WARNING: [Synth 8-6901] identifier 'Mem_ReadData_wb' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:156]
+WARNING: [Synth 8-6901] identifier 'is_jr_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:60]
+WARNING: [Synth 8-6901] identifier 'alu_input_a_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:60]
+WARNING: [Synth 8-6901] identifier 'Jump_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:61]
+WARNING: [Synth 8-6901] identifier 'jump_target_addr_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:61]
+WARNING: [Synth 8-6901] identifier 'branch_cond_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:62]
+WARNING: [Synth 8-6901] identifier 'branch_target_addr_ex' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:62]
+WARNING: [Synth 8-6901] identifier 'ALU_Result_mem' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:124]
+WARNING: [Synth 8-6901] identifier 'ALU_Result_mem' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:125]
+WARNING: [Synth 8-6901] identifier 'Mem_ReadData_wb' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:159]
 WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/cache_g.sv:17]
 WARNING: [Synth 8-6901] identifier 'WAIT_READ_RSP_FOR_WRITE' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/cache_g.sv:17]
 WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/cache_g.sv:17]
@@ -44,7 +44,7 @@ WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Us
 WARNING: [Synth 8-6901] identifier 'IDLE' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_controller.sv:88]
 WARNING: [Synth 8-6901] identifier 'cpu_fpu_stall' is used before its declaration [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/top.sv:83]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1004.801 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.777 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/top.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'MIPS_CPU' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:4]
@@ -73,7 +73,7 @@ INFO: [Synth 8-226] default block is never used [C:/Users/hayab/CPU_EXPERIMENT/C
 INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (9#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ALUControl.sv:2]
 INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ALU.sv:2]
 INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ALU.sv:2]
-INFO: [Synth 8-6157] synthesizing module 'FPU_Top' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/FPU_Top.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'FPU_Top' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/FPU_Top.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'fadd' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fadd.sv:3]
 INFO: [Synth 8-6155] done synthesizing module 'fadd' (11#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fadd.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'fmul' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fmul.sv:2]
@@ -89,7 +89,7 @@ INFO: [Synth 8-6157] synthesizing module 'fsqrt' [C:/Users/hayab/CPU_EXPERIMENT/
 	Parameter FP_INF bound to: 2139095040 - type: integer 
 	Parameter FP_NAN bound to: 2143289344 - type: integer 
 	Parameter FP_ZERO bound to: 0 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'fsqrt_table.hex' is read successfully [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fsqrt_10.sv:26]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fsqrt_table.hex' is read successfully [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fsqrt_10.sv:26]
 WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fsqrt_10.sv:28]
 WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fsqrt_10.sv:28]
 WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fsqrt_10.sv:28]
@@ -203,26 +203,31 @@ INFO: [Synth 8-6157] synthesizing module 'itof' [C:/Users/hayab/CPU_EXPERIMENT/C
 INFO: [Synth 8-6155] done synthesizing module 'itof' (16#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/itof_without_fadd.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'ffloor' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ffloor.sv:3]
 INFO: [Synth 8-6155] done synthesizing module 'ffloor' (17#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/ffloor.sv:3]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/FPU_Top.sv:180]
-INFO: [Synth 8-6155] done synthesizing module 'FPU_Top' (18#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/FPU_Top.sv:4]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/FPU_Top.sv:196]
+Reason is one or more of the following :
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "fpu_regs_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'FPU_Top' (18#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/FPU_Top.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'PipelineRegister_EX_MEM' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/PipelineRegister_EX_MEM.sv:2]
 INFO: [Synth 8-6155] done synthesizing module 'PipelineRegister_EX_MEM' (19#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/PipelineRegister_EX_MEM.sv:2]
 INFO: [Synth 8-6157] synthesizing module 'PipelineRegister_MEM_WB' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/PipelineRegister_MEM_WB.sv:2]
 INFO: [Synth 8-6155] done synthesizing module 'PipelineRegister_MEM_WB' (20#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/PipelineRegister_MEM_WB.sv:2]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'pc_unit'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:62]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'instr_mem'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:66]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'if_id_reg'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:69]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'hazard_detection_unit'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:116]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'id_ex_reg'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:97]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rf_unit'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:88]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'main_controller_unit'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:82]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'forwarding_unit'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:119]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ex_mem_reg'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:209]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mem_wb_reg'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:226]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'pc_unit'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:65]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'instr_mem'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:69]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'if_id_reg'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:72]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'hazard_detection_unit'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:119]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'id_ex_reg'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:100]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rf_unit'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:91]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'main_controller_unit'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:85]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'forwarding_unit'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:122]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ex_mem_reg'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:216]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mem_wb_reg'. This will prevent further optimization [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:233]
 INFO: [Synth 8-6155] done synthesizing module 'MIPS_CPU' (21#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.sv:4]
 INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/uart_tx.v:4]
-	Parameter CLK_FREQ bound to: 30000000 - type: integer 
-	Parameter CLOCKS_PER_BIT bound to: 260 - type: integer 
+	Parameter CLK_FREQ bound to: 25000000 - type: integer 
+	Parameter CLOCKS_PER_BIT bound to: 217 - type: integer 
 	Parameter S_IDLE bound to: 3'b000 
 	Parameter S_START bound to: 3'b001 
 	Parameter S_DATA bound to: 3'b010 
@@ -230,8 +235,8 @@ INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/hayab/CPU_EXPERIMEN
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/uart_tx.v:38]
 INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (22#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/uart_tx.v:4]
 INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/uart_rx.v:4]
-	Parameter CLK_FREQ bound to: 30000000 - type: integer 
-	Parameter CLOCKS_PER_BIT bound to: 260 - type: integer 
+	Parameter CLK_FREQ bound to: 25000000 - type: integer 
+	Parameter CLOCKS_PER_BIT bound to: 217 - type: integer 
 	Parameter S_IDLE bound to: 3'b000 
 	Parameter S_START bound to: 3'b001 
 	Parameter S_DATA bound to: 3'b010 
@@ -242,8 +247,8 @@ INFO: [Synth 8-6157] synthesizing module 'uart_word_fifo' [C:/Users/hayab/CPU_EX
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/uart_word_fifo.sv:69]
 INFO: [Synth 8-6155] done synthesizing module 'uart_word_fifo' (24#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/uart_word_fifo.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'cachecontroller' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/cachecontroller.sv:2]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-47512-ispc_JPH245YLQ9/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (25#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-47512-ispc_JPH245YLQ9/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-31684-ispc_JPH245YLQ9/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (25#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-31684-ispc_JPH245YLQ9/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'master_fifo' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/master_fifo_slave.sv:18]
 INFO: [Synth 8-6155] done synthesizing module 'master_fifo' (25#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/master_fifo_slave.sv:18]
 INFO: [Synth 8-6157] synthesizing module 'slave_fifo' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/master_fifo_slave.sv:47]
@@ -268,50 +273,50 @@ INFO: [Synth 8-6157] synthesizing module 'cache' [C:/Users/hayab/CPU_EXPERIMENT/
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/cache_g.sv:85]
 INFO: [Synth 8-6155] done synthesizing module 'cache' (26#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/cache_g.sv:2]
 INFO: [Synth 8-6157] synthesizing module 'dram_buf' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_buf.sv:2]
-INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-47512-ispc_JPH245YLQ9/realtime/fifo_generator_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (27#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-47512-ispc_JPH245YLQ9/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-31684-ispc_JPH245YLQ9/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (27#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-31684-ispc_JPH245YLQ9/realtime/fifo_generator_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_generator_0' is unconnected for instance 'request_fifo' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_buf.sv:11]
 WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_generator_0' is unconnected for instance 'request_fifo' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_buf.sv:11]
 WARNING: [Synth 8-7023] instance 'request_fifo' of module 'fifo_generator_0' has 11 connections declared, but only 9 given [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_buf.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'fifo_generator_1' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-47512-ispc_JPH245YLQ9/realtime/fifo_generator_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_1' (28#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-47512-ispc_JPH245YLQ9/realtime/fifo_generator_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_1' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-31684-ispc_JPH245YLQ9/realtime/fifo_generator_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_1' (28#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-31684-ispc_JPH245YLQ9/realtime/fifo_generator_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_generator_1' is unconnected for instance 'response_fifo' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_buf.sv:27]
 WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_generator_1' is unconnected for instance 'response_fifo' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_buf.sv:27]
 WARNING: [Synth 8-7023] instance 'response_fifo' of module 'fifo_generator_1' has 11 connections declared, but only 9 given [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_buf.sv:27]
 INFO: [Synth 8-6155] done synthesizing module 'dram_buf' (29#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_buf.sv:2]
 INFO: [Synth 8-6157] synthesizing module 'dram_controller' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_controller.sv:2]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_0' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-47512-ispc_JPH245YLQ9/realtime/mig_7series_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0' (30#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-47512-ispc_JPH245YLQ9/realtime/mig_7series_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_0' [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-31684-ispc_JPH245YLQ9/realtime/mig_7series_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0' (30#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/.Xil/Vivado-31684-ispc_JPH245YLQ9/realtime/mig_7series_0_stub.v:5]
 WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_controller.sv:87]
 WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_controller.sv:88]
 INFO: [Synth 8-6155] done synthesizing module 'dram_controller' (31#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/dram_controller.sv:2]
 INFO: [Synth 8-6155] done synthesizing module 'cachecontroller' (32#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/cachecontroller.sv:2]
 INFO: [Synth 8-6155] done synthesizing module 'top' (33#1) [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/top.sv:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1059.523 ; gain = 54.723
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1064.707 ; gain = 48.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1067.844 ; gain = 63.043
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1064.707 ; gain = 48.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1067.844 ; gain = 63.043
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1064.707 ; gain = 48.930
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 1067.844 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 1064.707 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc] for cell 'cachecontroller_inst/dram_controller/mig'
 Finished Parsing XDC File [c:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc] for cell 'cachecontroller_inst/dram_controller/mig'
-Parsing XDC File [c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'cachecontroller_inst/clk_gen'
-Finished Parsing XDC File [c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'cachecontroller_inst/clk_gen'
 Parsing XDC File [c:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'cachecontroller_inst/dram_buf/request_fifo'
 Finished Parsing XDC File [c:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'cachecontroller_inst/dram_buf/request_fifo'
 Parsing XDC File [c:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.gen/sources_1/ip/fifo_generator_1/fifo_generator_1/fifo_generator_1_in_context.xdc] for cell 'cachecontroller_inst/dram_buf/response_fifo'
 Finished Parsing XDC File [c:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.gen/sources_1/ip/fifo_generator_1/fifo_generator_1/fifo_generator_1_in_context.xdc] for cell 'cachecontroller_inst/dram_buf/response_fifo'
+Parsing XDC File [c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'cachecontroller_inst/clk_gen'
+Finished Parsing XDC File [c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'cachecontroller_inst/clk_gen'
 Parsing XDC File [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.xdc]
 Finished Parsing XDC File [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
@@ -320,20 +325,20 @@ Parsing XDC File [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/p
 Finished Parsing XDC File [C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1214.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1224.137 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1214.461 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1224.137 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1214.461 ; gain = 209.660
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1224.137 ; gain = 208.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1214.461 ; gain = 209.660
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1224.137 ; gain = 208.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -433,15 +438,25 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_we_n. (constraint file  c
 Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
 Applied set_property KEEP_HIERARCHY = SOFT for cachecontroller_inst/dram_controller/mig. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for cachecontroller_inst/clk_gen. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for cachecontroller_inst/dram_buf/request_fifo. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for cachecontroller_inst/dram_buf/response_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for cachecontroller_inst/clk_gen. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1214.461 ; gain = 209.660
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1224.137 ; gain = 208.359
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FPU_Top'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dram_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                               00
+                    BUSY |                             0010 |                               01
+                    DONE |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'FPU_Top'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -471,7 +486,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'dram_controller'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1214.461 ; gain = 209.660
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1224.137 ; gain = 208.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -499,13 +514,13 @@ Detailed RTL Component Info :
 	   2 Input    2 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
-	   2 Input      1 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 4     
 +---Registers : 
 	              128 Bit    Registers := 3     
 	               49 Bit    Registers := 2     
 	               48 Bit    Registers := 2     
 	               47 Bit    Registers := 1     
-	               32 Bit    Registers := 64    
+	               32 Bit    Registers := 96    
 	               28 Bit    Registers := 1     
 	               27 Bit    Registers := 5     
 	               26 Bit    Registers := 1     
@@ -520,7 +535,7 @@ Detailed RTL Component Info :
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 11    
 	                3 Bit    Registers := 5     
-	                2 Bit    Registers := 9     
+	                2 Bit    Registers := 8     
 	                1 Bit    Registers := 82    
 +---RAMs : 
 	              32K Bit	(1024 X 32 bit)          RAMs := 1     
@@ -530,11 +545,13 @@ Detailed RTL Component Info :
 +---ROMs : 
 	                    ROMs := 1     
 +---Muxes : 
+	   2 Input 1024 Bit        Muxes := 1     
+	   3 Input 1024 Bit        Muxes := 1     
 	  12 Input  128 Bit        Muxes := 2     
 	   4 Input  128 Bit        Muxes := 2     
 	   2 Input  128 Bit        Muxes := 1     
 	   2 Input   41 Bit        Muxes := 1     
-	   2 Input   32 Bit        Muxes := 56    
+	   2 Input   32 Bit        Muxes := 73    
 	   3 Input   32 Bit        Muxes := 3     
 	   5 Input   32 Bit        Muxes := 1     
 	   4 Input   32 Bit        Muxes := 2     
@@ -551,25 +568,26 @@ Detailed RTL Component Info :
 	   2 Input    8 Bit        Muxes := 16    
 	   4 Input    8 Bit        Muxes := 1     
 	   2 Input    6 Bit        Muxes := 1     
-	  28 Input    5 Bit        Muxes := 1     
-	   2 Input    5 Bit        Muxes := 13    
+	   2 Input    5 Bit        Muxes := 12    
 	   3 Input    5 Bit        Muxes := 31    
+	  28 Input    5 Bit        Muxes := 1     
 	  12 Input    5 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
 	  17 Input    4 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 2     
 	   2 Input    3 Bit        Muxes := 3     
 	   8 Input    3 Bit        Muxes := 1     
 	  17 Input    3 Bit        Muxes := 1     
 	   4 Input    3 Bit        Muxes := 2     
-	   2 Input    2 Bit        Muxes := 10    
+	   2 Input    2 Bit        Muxes := 8     
 	  17 Input    2 Bit        Muxes := 2     
 	   3 Input    2 Bit        Muxes := 3     
 	   4 Input    2 Bit        Muxes := 3     
 	  12 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 77    
-	   4 Input    1 Bit        Muxes := 17    
+	   2 Input    1 Bit        Muxes := 68    
+	   4 Input    1 Bit        Muxes := 22    
+	   3 Input    1 Bit        Muxes := 2     
 	  17 Input    1 Bit        Muxes := 8     
-	   3 Input    1 Bit        Muxes := 1     
 	  12 Input    1 Bit        Muxes := 15    
 	   5 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -605,12 +623,6 @@ DSP Report: operator delta_reg2 is absorbed into DSP delta_reg2.
 DSP Report: operator delta_reg2 is absorbed into DSP delta_reg2.
 DSP Report: Generating DSP exp_final2, operation Mode is: A*B.
 DSP Report: operator exp_final2 is absorbed into DSP exp_final2.
-DSP Report: Generating DSP s1_prod_reg0, operation Mode is: A*B.
-DSP Report: operator s1_prod_reg0 is absorbed into DSP s1_prod_reg0.
-DSP Report: operator s1_prod_reg0 is absorbed into DSP s1_prod_reg0.
-DSP Report: Generating DSP s1_prod_reg0, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator s1_prod_reg0 is absorbed into DSP s1_prod_reg0.
-DSP Report: operator s1_prod_reg0 is absorbed into DSP s1_prod_reg0.
 DSP Report: Generating DSP stage2_P, operation Mode is: C-A*B.
 DSP Report: operator stage2_P is absorbed into DSP stage2_P.
 DSP Report: operator mult2 is absorbed into DSP stage2_P.
@@ -620,8 +632,14 @@ DSP Report: operator mult3_lo is absorbed into DSP mult3_lo.
 DSP Report: Generating DSP mult3_hi, operation Mode is: C+A*B.
 DSP Report: operator mult3_hi is absorbed into DSP mult3_hi.
 DSP Report: operator mult3_hi is absorbed into DSP mult3_hi.
+DSP Report: Generating DSP s1_prod_reg0, operation Mode is: A*B.
+DSP Report: operator s1_prod_reg0 is absorbed into DSP s1_prod_reg0.
+DSP Report: operator s1_prod_reg0 is absorbed into DSP s1_prod_reg0.
+DSP Report: Generating DSP s1_prod_reg0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator s1_prod_reg0 is absorbed into DSP s1_prod_reg0.
+DSP Report: operator s1_prod_reg0 is absorbed into DSP s1_prod_reg0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1261.527 ; gain = 256.727
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1348.027 ; gain = 332.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -650,8 +668,7 @@ Distributed RAM: Preliminary Mapping	Report (see note below)
 +-----------------------+------------------------------------------------+----------------+----------------------+-----------------------------+
 |Module Name            | RTL Object                                     | Inference      | Size (Depth x Width) | Primitives                  | 
 +-----------------------+------------------------------------------------+----------------+----------------------+-----------------------------+
-|top                    | fpu_regs_reg                                   | Implied        | 32 x 32              | RAM32M x 18	                | 
-|mips_corei_2/instr_mem | mem_reg                                        | User Attribute | 256 x 32             | RAM64X1D x 8	RAM64M x 40	   | 
+|mips_corei_4/instr_mem | mem_reg                                        | User Attribute | 256 x 32             | RAM64X1D x 8	RAM64M x 40	   | 
 |top                    | cachecontroller_inst/cache_inst/valid_bits_reg | Implied        | 256 x 1              | RAM128X1D x 2	              | 
 |top                    | cachecontroller_inst/cache_inst/dirty_bits_reg | Implied        | 256 x 1              | RAM128X1D x 2	              | 
 |top                    | uart_fifo_inst/fifo_mem_reg                    | Implied        | 1 K x 32             | RAM64X1D x 32	RAM64M x 160	 | 
@@ -668,11 +685,11 @@ DSP: Preliminary Mapping	Report (see note below)
 |fsqrt       | A2*B            | 25     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
 |fsqrt       | (PCIN>>17)+A2*B | 25     | 8      | -      | -      | 25     | 1    | 0    | -    | -    | -     | 0    | 0    | 
 |fsqrt       | A*B             | 25     | 18     | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|fmul        | A*B             | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|fmul        | (PCIN>>17)+A*B  | 25     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |fdiv        | C-A*B           | 24     | 11     | 47     | -      | 47     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |fdiv        | C+A*B           | 24     | 17     | 41     | -      | 42     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |fdiv        | C+A*B           | 24     | 7      | 31     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|fmul        | A*B             | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fmul        | (PCIN>>17)+A*B  | 25     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 +------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -683,13 +700,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1261.527 ; gain = 256.727
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1348.027 ; gain = 332.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 1261.527 ; gain = 256.727
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1348.027 ; gain = 332.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -708,8 +725,7 @@ Distributed RAM: Final Mapping	Report
 +-----------------------+------------------------------------------------+----------------+----------------------+-----------------------------+
 |Module Name            | RTL Object                                     | Inference      | Size (Depth x Width) | Primitives                  | 
 +-----------------------+------------------------------------------------+----------------+----------------------+-----------------------------+
-|top                    | fpu_regs_reg                                   | Implied        | 32 x 32              | RAM32M x 18	                | 
-|mips_corei_2/instr_mem | mem_reg                                        | User Attribute | 256 x 32             | RAM64X1D x 8	RAM64M x 40	   | 
+|mips_corei_4/instr_mem | mem_reg                                        | User Attribute | 256 x 32             | RAM64X1D x 8	RAM64M x 40	   | 
 |top                    | cachecontroller_inst/cache_inst/valid_bits_reg | Implied        | 256 x 1              | RAM128X1D x 2	              | 
 |top                    | cachecontroller_inst/cache_inst/dirty_bits_reg | Implied        | 256 x 1              | RAM128X1D x 2	              | 
 |top                    | uart_fifo_inst/fifo_mem_reg                    | Implied        | 1 K x 32             | RAM64X1D x 32	RAM64M x 160	 | 
@@ -731,7 +747,7 @@ INFO: [Synth 8-7052] The timing for the instance cachecontroller_inst/cache_inst
 INFO: [Synth 8-7052] The timing for the instance cachecontroller_inst/cache_inst/cache_memory_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance cachecontroller_inst/cache_inst/cache_memory_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1377.629 ; gain = 372.828
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 1348.027 ; gain = 332.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -749,37 +765,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:21 . Memory (MB): peak = 1392.828 ; gain = 388.027
+Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1356.324 ; gain = 340.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:21 . Memory (MB): peak = 1392.828 ; gain = 388.027
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1356.324 ; gain = 340.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1392.828 ; gain = 388.027
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1356.324 ; gain = 340.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1392.828 ; gain = 388.027
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1356.324 ; gain = 340.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1393.211 ; gain = 388.410
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1356.453 ; gain = 340.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1393.211 ; gain = 388.410
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1356.453 ; gain = 340.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -804,51 +820,49 @@ Report Cell Usage:
 |4     |mig_7series    |     1|
 |5     |CARRY4         |   164|
 |6     |DSP48E1        |    10|
-|12    |LUT1           |    88|
-|13    |LUT2           |   640|
-|14    |LUT3           |   571|
-|15    |LUT4           |   600|
-|16    |LUT5           |   876|
-|17    |LUT6           |  2375|
-|18    |MUXF7          |   464|
-|19    |MUXF8          |   200|
+|12    |LUT1           |    83|
+|13    |LUT2           |   636|
+|14    |LUT3           |   778|
+|15    |LUT4           |   605|
+|16    |LUT5           |  1217|
+|17    |LUT6           |  6615|
+|18    |MUXF7          |   721|
+|19    |MUXF8          |   264|
 |20    |RAM128X1D      |     4|
-|21    |RAM32M         |    18|
-|22    |RAM64M         |   170|
-|23    |RAM64X1D       |    33|
-|24    |RAMB18E1       |     1|
-|25    |RAMB36E1       |     8|
-|32    |FDCE           |  2145|
-|33    |FDPE           |    26|
-|34    |FDRE           |   706|
-|35    |FDSE           |     1|
-|36    |IBUF           |     2|
-|37    |OBUF           |    17|
+|21    |RAM64M         |   170|
+|22    |RAM64X1D       |    33|
+|23    |RAMB18E1       |     1|
+|24    |RAMB36E1       |     8|
+|31    |FDCE           |  2186|
+|32    |FDPE           |    27|
+|33    |FDRE           |  1729|
+|34    |FDSE           |     1|
+|35    |IBUF           |     2|
+|36    |OBUF           |    17|
 +------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1393.211 ; gain = 388.410
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1356.453 ; gain = 340.676
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:18 . Memory (MB): peak = 1393.211 ; gain = 241.793
-Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1393.211 ; gain = 388.410
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:14 ; elapsed = 00:01:22 . Memory (MB): peak = 1356.453 ; gain = 181.246
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1356.453 ; gain = 340.676
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1393.211 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1072 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 1371.859 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1375 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1393.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1371.859 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 225 instances were transformed.
+  A total of 207 instances were transformed.
   RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 4 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 18 instances
   RAM64M => RAM64M (RAMD64E(x4)): 170 instances
   RAM64X1D => RAM64X1D (RAMD64E(x2)): 33 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-121 Infos, 133 Warnings, 0 Critical Warnings and 0 Errors encountered.
+123 Infos, 133 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:42 . Memory (MB): peak = 1393.211 ; gain = 388.410
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1371.859 ; gain = 356.082
 INFO: [Common 17-1381] The checkpoint 'C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar  9 15:15:27 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  9 22:15:00 2026...

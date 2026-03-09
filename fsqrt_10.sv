@@ -23,7 +23,7 @@ module fsqrt (
     (* ram_style = "block" *) reg [23:0] lut_sq [0:1023];
 
     initial begin
-      $readmemh("fsqrt_table.hex", lut);
+      $readmemh("C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/fsqrt_table.hex", lut);
       for (int i = 0; i < 1024; i++) begin
         lut_sq[i] = (48'(lut[i]) * lut[i]) >> 24;
       end

@@ -136,8 +136,8 @@ module top (
 
     // --- UART TX モジュール ---
     uart_tx #(
-        .CLK_FREQ(30_000_000),
-        .CLOCKS_PER_BIT(260)
+        .CLK_FREQ(25_000_000),
+        .CLOCKS_PER_BIT(217)
     ) uart_tx_inst (
         .clk(cpu_clk),
         .rst(rst),
@@ -150,8 +150,8 @@ module top (
 
     // --- UART RX モジュール ---
     uart_rx #(
-        .CLK_FREQ(30_000_000),
-        .CLOCKS_PER_BIT(260)
+        .CLK_FREQ(25_000_000),
+        .CLOCKS_PER_BIT(217)
     ) uart_rx_inst (
         .clk(cpu_clk),
         .rst(rst),

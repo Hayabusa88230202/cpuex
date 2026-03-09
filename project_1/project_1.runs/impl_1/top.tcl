@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -141,9 +140,9 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.runs/synth_1/top.dcp
   read_ip -quiet C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci
-  read_ip -quiet C:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0.xci
   read_ip -quiet C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
   read_ip -quiet C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xci
+  read_ip -quiet C:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0.xci
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/MIPS_CPU.xdc
 OPTRACE "read constraints: implementation" END { }

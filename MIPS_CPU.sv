@@ -37,13 +37,16 @@ module MIPS_CPU (
     // =========================================================
     wire hold_branch = structural_hazard && branch_taken_ex;
 
+    // ★追加: FPU以外の理由（DRAM待ちなど）によるEXステージのストール信号
+    wire ex_stall_no_fpu = mem_busy || hold_branch;
+
     // stall_pc は元の安全なロジックに戻す
     assign stall_pc     = global_load_use_stall || mem_busy || stall_fpu || structural_hazard;
     
     // hold_branch が発動した時は、EXステージにジャンプ命令を「留めておく」
     assign stall_if_id  = global_load_use_stall || mem_busy || stall_fpu || hold_branch;
-    assign stall_id_ex  = mem_busy || stall_fpu || hold_branch;
-    
+    //assign stall_id_ex  = mem_busy || stall_fpu || hold_branch;
+    assign stall_id_ex  = ex_stall_no_fpu || stall_fpu; // ★修正
     assign stall_ex_mem = mem_busy || stall_fpu;
     assign stall_mem_wb = mem_busy || stall_fpu;
 
@@ -165,7 +168,8 @@ module MIPS_CPU (
         .ext_we(fpu_ext_we), .ext_waddr(fpu_ext_waddr), .ext_wdata(fpu_ext_wdata),
         .fpu_rdata_ex(fpu_rdata_ex), .fpu_wdata_ex(fpu_wdata_ex),
         .fpu_arith_result(fpu_arith_result), 
-        .fpu_stall_req(stall_fpu), .fpu_flag_out(fpu_flag_ex)
+        .fpu_stall_req(stall_fpu), .fpu_flag_out(fpu_flag_ex),
+        .cpu_stalled_ex(ex_stall_no_fpu) // ★これを追加してFPUに繋ぐ！
     );
     
     wire is_mfc1_ex = (instruction_ex[31:26] == 6'h11) && (instruction_ex[25:21] == 5'd00);
@@ -180,8 +184,11 @@ module MIPS_CPU (
     // =========================================================
     // ★絶対ジャンプのDRAM引き戻し修正 (j, jal)
     // =========================================================
-    wire [31:0] raw_jump_target = {PC_Plus_4_ex[31:28], JumpIndex_ex, 2'b00};
-    wire [31:0] jump_target_addr_ex = (PC_Plus_4_ex >= 32'h00040000) ? (raw_jump_target | 32'h00040000) : raw_jump_target;
+    //wire [31:0] raw_jump_target = {PC_Plus_4_ex[31:28], JumpIndex_ex, 2'b00};
+    //wire [31:0] jump_target_addr_ex = (PC_Plus_4_ex >= 32'h00040000) ? (raw_jump_target | 32'h00040000) : raw_jump_target;
+
+    // 修正後（シミュレータと完全一致！）
+    wire [31:0] jump_target_addr_ex = {PC_Plus_4_ex[31:28], JumpIndex_ex, 2'b00};
 
     wire is_bc1t = (instruction_ex[16] == 1'b1);
     wire is_bc1f = (instruction_ex[16] == 1'b0);

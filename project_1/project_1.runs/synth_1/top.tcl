@@ -72,7 +72,6 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -137,12 +136,6 @@ read_ip -quiet C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/proj
 set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc]
 
-read_ip -quiet C:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0_late.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
-
 read_ip -quiet C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.gen/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc]
@@ -152,6 +145,12 @@ read_ip -quiet C:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/proj
 set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/CPU_CORE_SINGLE_PIPELINE_cashe/project_1/project_1.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_ooc.xdc]
+
+read_ip -quiet C:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0_late.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/hayab/CPU_EXPERIMENT/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
