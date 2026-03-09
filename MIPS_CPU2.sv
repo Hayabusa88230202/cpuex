@@ -11,7 +11,7 @@ module MIPS_CPU (
     output logic [31:0] mem_wdata,  
     output logic        mem_we,     
     output logic        mem_re,
-    output logic        stall_fpu_out  // ★ここを追加！      
+    output logic        stall_fpu_out      
 );
 
     (* mark_debug = "true" *) wire [31:0] pc_current;
@@ -32,17 +32,30 @@ module MIPS_CPU (
     wire structural_hazard  = is_mem_access && fetching_from_dram;
     wire mem_busy = (mem_re || mem_we) && !mem_ready;
     
+    // =========================================================
+    // ★究極の修正: ジャンプと構造的ハザードの衝突を防ぐ「足止め」ロジック
+    // =========================================================
+    wire hold_branch = structural_hazard && branch_taken_ex;
+
+    // ★追加: FPU以外の理由（DRAM待ちなど）によるEXステージのストール信号
+    wire ex_stall_no_fpu = mem_busy || hold_branch;
+
+    // stall_pc は元の安全なロジックに戻す
     assign stall_pc     = global_load_use_stall || mem_busy || stall_fpu || structural_hazard;
-    //assign stall_pc = global_load_use_stall || mem_busy || stall_fpu || (structural_hazard && !branch_taken_ex);
-    assign stall_if_id  = global_load_use_stall || mem_busy || stall_fpu;
-    assign stall_id_ex  = mem_busy || stall_fpu;
+    
+    // hold_branch が発動した時は、EXステージにジャンプ命令を「留めておく」
+    assign stall_if_id  = global_load_use_stall || mem_busy || stall_fpu || hold_branch;
+    //assign stall_id_ex  = mem_busy || stall_fpu || hold_branch;
+    assign stall_id_ex  = ex_stall_no_fpu || stall_fpu; // ★修正
     assign stall_ex_mem = mem_busy || stall_fpu;
     assign stall_mem_wb = mem_busy || stall_fpu;
 
-    assign stall_fpu_out = stall_fpu; // ★これを適当な assign の並びに追加！
+    assign stall_fpu_out = stall_fpu; 
    
     assign flush_if_id  = branch_taken_ex || (structural_hazard && !stall_if_id);
-    assign flush_id_ex  = (global_load_use_flush || branch_taken_ex) && !stall_ex_mem && !stall_fpu;
+    
+    // 足止め中は ID/EX をフラッシュ（消去）しないように保護する
+    assign flush_id_ex  = (global_load_use_flush || branch_taken_ex) && !stall_ex_mem && !stall_fpu && !hold_branch;
 
     wire [31:0] pc_in = (is_jr_ex)       ? alu_input_a_ex :        
                         (Jump_ex)        ? jump_target_addr_ex :   
@@ -59,7 +72,7 @@ module MIPS_CPU (
     PipelineRegister_IF_ID if_id_reg (.clk(clk), .rst(rst), .i_stall(stall_if_id), .i_flush(flush_if_id), .i_instruction(instruction_fetched), .i_pc_plus_4(pc_plus_4_if), .o_instruction(instruction_id), .o_pc_plus_4(pc_plus_4_id));
 
     // =========================================================
-    // ★追加: itof と ftoi のデコード (IDステージ)
+    // IDステージ (デコード)
     // =========================================================
     wire is_cop1_id = (instruction_id[31:26] == 6'h11);
     wire is_itof_id = is_cop1_id && (instruction_id[25:21] == 5'd20) && (instruction_id[5:0] == 6'h20);
@@ -71,13 +84,8 @@ module MIPS_CPU (
 
     MainController main_controller_unit (.Opcode(instruction_id[31:26]), .Funct(instruction_id[5:0]), .Rs(instruction_id[25:21]), .RegDst(RegDst_id), .ALUSrc(ALUSrc_id), .MemToReg(MemToReg_id), .RegWrite(RegWrite_id), .MemRead(MemRead_id), .MemWrite(MemWrite_id), .Beq(BEQ_id), .Bne(BNE_id), .Jump(Jump_id), .ExtOp(ExtOp_id), .ALUOp(ALUOp_id), .BranchFP(BranchFP_id));
     assign sign_extended_imm_id = (ExtOp_id) ? {{16{instruction_id[15]}}, instruction_id[15:0]} : {16'b0, instruction_id[15:0]};
-    // ★究極の修正: $signed() を使って安全かつ確実に符号拡張を行う！
-    //assign sign_extended_imm_id = (ExtOp_id) ? 32'($signed(instruction_id[15:0])) : {16'd0, instruction_id[15:0]};
 
-    // ★修正: itofの場合はGPRの読み出し先を rs(15:11) に切り替える！
     wire [4:0] rs_addr_id = is_itof_id ? instruction_id[15:11] : instruction_id[25:21];
-    
-    // ★修正: ftoiの場合はGPRに書き込むのでRegWriteを強制ON！
     wire actual_regwrite_id = RegWrite_id || is_ftoi_id;
 
     RegisterFile rf_unit (.clk(clk), .rst(rst), .ReadAddr1(rs_addr_id), .ReadAddr2(instruction_id[20:16]), .ReadData1(read_data_1_id), .ReadData2(read_data_2_id), .RegWrite(RegWrite_wb), .WriteAddr(Write_Addr_wb), .WriteData(write_data_wb));
@@ -138,7 +146,6 @@ module MIPS_CPU (
     wire is_fmt_s_id = is_cop1_id && (instruction_id[25:21] == 5'd16);
     wire is_mfc1_id  = is_cop1_id && (instruction_id[25:21] == 5'd00);
 
-    // ★修正: itof(fmt=20)はFPUレジスタを読まないため、ハザード検知から除外！
     wire id_reads_fpu_fs = is_fmt_s_id || is_mfc1_id; 
     wire id_reads_fpu_ft = is_fmt_s_id || is_fsw_id;  
     
@@ -156,30 +163,26 @@ module MIPS_CPU (
     FPU_Top fpu_unit (
         .clk(clk), .rst_n(rst),
         .instruction_ex(instruction_ex),
-        .cpu_rdata1_ex(alu_input_a_ex), // ★追加: GPR rs(itofの入力) をFPUに繋ぐ！
+        .cpu_rdata1_ex(alu_input_a_ex), 
         .cpu_rdata2_ex(ReadData2_ex),
         .ext_we(fpu_ext_we), .ext_waddr(fpu_ext_waddr), .ext_wdata(fpu_ext_wdata),
         .fpu_rdata_ex(fpu_rdata_ex), .fpu_wdata_ex(fpu_wdata_ex),
-        .fpu_arith_result(fpu_arith_result), // ★追加: FPUからの出力(ftoi) を受け取る！
-        .fpu_stall_req(stall_fpu), .fpu_flag_out(fpu_flag_ex)
+        .fpu_arith_result(fpu_arith_result), 
+        .fpu_stall_req(stall_fpu), .fpu_flag_out(fpu_flag_ex),
+        .cpu_stalled_ex(ex_stall_no_fpu) // ★これを追加してFPUに繋ぐ！
     );
     
     wire is_mfc1_ex = (instruction_ex[31:26] == 6'h11) && (instruction_ex[25:21] == 5'd00);
     wire is_ftoi_ex = (instruction_ex[31:26] == 6'h11) && (instruction_ex[25:21] == 5'd16) && (instruction_ex[5:0] == 6'h24);
 
-    // ★修正: ftoiの結果をGPR書き戻し用の最終データに繋ぐ！
     wire [31:0] final_ex_result = is_mfc1_ex ? fpu_rdata_ex : 
                                   is_ftoi_ex ? fpu_arith_result : 
                                   alu_result_ex;
     
     wire [31:0] branch_target_addr_ex = PC_Plus_4_ex + (SignExtendedImm_ex << 2);
-    //wire [31:0] current_pc_ex = PC_Plus_4_ex - 32'd4; // 今実行している命令の本当のPC
-    //wire [31:0] branch_target_addr_ex = current_pc_ex + (SignExtendedImm_ex << 2);
-    wire [31:0] jump_target_addr_ex   = {PC_Plus_4_ex[31:28], JumpIndex_ex, 2'b00};
-    // ★究極の修正: アセンブラが 0x00000000 ベースでコンパイルしていても、
-    // DRAM実行中(0x00040000以上)の絶対ジャンプ(j, jal)なら、強制的に 0x00040000 を足してDRAM内に引き戻す！
-    //wire [31:0] raw_jump_target = {PC_Plus_4_ex[31:28], JumpIndex_ex, 2'b00};
-    //wire [31:0] jump_target_addr_ex = (PC_Plus_4_ex >= 32'h00040000) ? (raw_jump_target | 32'h00040000) : raw_jump_target;
+
+    // 修正後（シミュレータと完全一致！）
+    wire [31:0] jump_target_addr_ex = {PC_Plus_4_ex[31:28], JumpIndex_ex, 2'b00};
 
     wire is_bc1t = (instruction_ex[16] == 1'b1);
     wire is_bc1f = (instruction_ex[16] == 1'b0);
@@ -191,7 +194,6 @@ module MIPS_CPU (
 
     wire [4:0] fd_addr_ex = instruction_ex[10:6];
     
-    // ★修正: ftoiの場合はGPRの fd(10:6) に書き込む！
     assign write_addr_ex = (is_ftoi_ex)         ? fd_addr_ex :
                            (RegDst_ex == 2'b10) ? 5'd31 :       
                            (RegDst_ex == 2'b01) ? rd_addr_ex :  

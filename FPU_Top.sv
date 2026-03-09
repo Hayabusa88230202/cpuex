@@ -1,3 +1,4 @@
+// FPU_Top.sv
 `default_nettype none
 
 module FPU_Top (
@@ -72,7 +73,6 @@ module FPU_Top (
     assign fpu_wdata_ex = fpu_val_t; 
     assign fpu_rdata_ex = fpu_val_s;
 
-    // 前回の最強修正（デュアルポート書き込み）
     always_ff @(posedge clk) begin
         if (ext_we && internal_we) begin
             if (ext_waddr == internal_waddr) begin
@@ -96,30 +96,35 @@ module FPU_Top (
     wire [31:0] op_a = is_itof ? cpu_rdata1_ex : reg_rdata_s;
     wire [31:0] op_b = is_fsub ? {~reg_rdata_t[31], reg_rdata_t[30:0]} : reg_rdata_t;
 
-    logic [31:0] res_add, res_mul, res_div, res_sqrt, res_ftoi, res_itof;
-    logic        val_add, val_mul, val_div, val_sqrt, val_ftoi, val_itof;
-
     // =========================================================
-    // ★ 究極の防御シールド：ゼロ除算と負の平方根によるFPUハング防止
+    // ★ 究極の防御シールド＋NaN伝播（完全版）
     // =========================================================
     wire fdiv_b_is_zero = (op_b[30:0] == 31'b0);
-    wire [31:0] safe_fdiv_b = fdiv_b_is_zero ? 32'h3F800000 : op_b; // 0ならダミーで1.0を入れる
+    wire [31:0] safe_fdiv_b = fdiv_b_is_zero ? 32'h3F800000 : op_b; 
     
     wire fsqrt_is_neg = op_a[31] && (op_a[30:0] != 31'b0);
-    wire [31:0] safe_fsqrt_a = fsqrt_is_neg ? 32'b0 : op_a; // 負の数ならダミーで0.0を入れる
+    wire [31:0] safe_fsqrt_a = fsqrt_is_neg ? 32'b0 : op_a; 
 
-    logic [31:0] res_div_raw, res_sqrt_raw;
+    // 入力のどちらかがNaNなら、すべての計算結果をNaNで塗りつぶす！
+    wire a_is_nan = (&op_a[30:23]) && (|op_a[22:0]);
+    wire b_is_nan = (&op_b[30:23]) && (|op_b[22:0]);
+    wire has_nan  = a_is_nan | b_is_nan;
+    wire [31:0] NAN_VALUE = 32'h7FC00000;
 
-    fadd u_fadd (.clk(clk), .rst_n(rst_n), .input_a(op_a), .input_b(op_b), .input_valid(start_arith && (is_fadd || is_fsub)), .result(res_add), .out_valid(val_add));
-    fmul u_fmul (.clk(clk), .rst_n(rst_n), .input_a(op_a), .input_b(op_b), .input_valid(start_arith && is_fmul), .result(res_mul), .out_valid(val_mul));
-    
-    // シールドで守られた入力を使う
+    logic [31:0] res_add_raw, res_mul_raw, res_div_raw, res_sqrt_raw;
+    logic        val_add, val_mul, val_div, val_sqrt, val_ftoi, val_itof;
+    logic [31:0] res_ftoi, res_itof;
+
+    fadd u_fadd (.clk(clk), .rst_n(rst_n), .input_a(op_a), .input_b(op_b), .input_valid(start_arith && (is_fadd || is_fsub)), .result(res_add_raw), .out_valid(val_add));
+    fmul u_fmul (.clk(clk), .rst_n(rst_n), .input_a(op_a), .input_b(op_b), .input_valid(start_arith && is_fmul), .result(res_mul_raw), .out_valid(val_mul));
     fdiv u_fdiv (.clk(clk), .rst_n(rst_n), .input_a(op_a), .input_b(safe_fdiv_b), .input_valid(start_arith && is_fdiv), .result(res_div_raw), .out_valid(val_div));
     fsqrt u_fsqrt (.clk(clk), .rst_n(rst_n), .input_a(safe_fsqrt_a), .input_valid(start_arith && is_fsqrt), .result(res_sqrt_raw), .out_valid(val_sqrt));
 
-    // 結果のすり替え (IEEE 754に準拠)
-    assign res_div  = fdiv_b_is_zero ? {op_a[31] ^ op_b[31], 8'hFF, 23'b0} : res_div_raw; // ゼロ除算は Infinity
-    assign res_sqrt = fsqrt_is_neg ? 32'h7FC00000 : res_sqrt_raw;                         // 負の平方根は NaN
+    // 結果のすり替え (NaNの完全伝播)
+    wire [31:0] res_add  = has_nan ? NAN_VALUE : res_add_raw;
+    wire [31:0] res_mul  = has_nan ? NAN_VALUE : res_mul_raw;
+    wire [31:0] res_div  = has_nan ? NAN_VALUE : (fdiv_b_is_zero ? {op_a[31] ^ op_b[31], 8'hFF, 23'b0} : res_div_raw);
+    wire [31:0] res_sqrt = a_is_nan ? NAN_VALUE : (fsqrt_is_neg ? NAN_VALUE : res_sqrt_raw);
     // =========================================================
 
     ftoi u_ftoi (.clk(clk), .rst_n(rst_n), .in_f(op_a), .input_valid(start_arith && is_ftoi), .out_i(res_ftoi), .out_valid(val_ftoi));
@@ -150,10 +155,6 @@ module FPU_Top (
     wire a_zero = (op_a[30:0] == 0); wire b_zero = (op_b[30:0] == 0);
     wire ieee_eq = (a_zero && b_zero) || (op_a == op_b);
     
-    wire a_is_nan = (&op_a[30:23]) && (|op_a[22:0]);
-    wire b_is_nan = (&op_b[30:23]) && (|op_b[22:0]);
-    wire has_nan  = a_is_nan | b_is_nan;
-
     logic ieee_le; logic ieee_lt;
     always_comb begin
         if (a_zero && b_zero) ieee_le = 1; else if (op_a[31] != op_b[31]) ieee_le = op_a[31]; else if (op_a[31]) ieee_le = (op_a >= op_b); else ieee_le = (op_a <= op_b);

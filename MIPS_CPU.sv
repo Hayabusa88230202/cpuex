@@ -180,12 +180,6 @@ module MIPS_CPU (
                                   alu_result_ex;
     
     wire [31:0] branch_target_addr_ex = PC_Plus_4_ex + (SignExtendedImm_ex << 2);
-    
-    // =========================================================
-    // ★絶対ジャンプのDRAM引き戻し修正 (j, jal)
-    // =========================================================
-    //wire [31:0] raw_jump_target = {PC_Plus_4_ex[31:28], JumpIndex_ex, 2'b00};
-    //wire [31:0] jump_target_addr_ex = (PC_Plus_4_ex >= 32'h00040000) ? (raw_jump_target | 32'h00040000) : raw_jump_target;
 
     // 修正後（シミュレータと完全一致！）
     wire [31:0] jump_target_addr_ex = {PC_Plus_4_ex[31:28], JumpIndex_ex, 2'b00};
