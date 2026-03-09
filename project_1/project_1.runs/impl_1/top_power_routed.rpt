@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Sun Mar  8 17:53:02 2026
+| Date             : Mon Mar  9 15:19:23 2026
 | Host             : ispc_JPH245YLQ9 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.057        |
+| Total On-Chip Power (W)  | 1.049        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.949        |
+| Dynamic (W)              | 0.940        |
 | Device Static (W)        | 0.108        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 80.2         |
@@ -52,25 +52,25 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.020 |       46 |       --- |             --- |
-| Slice Logic              |     0.018 |    22454 |       --- |             --- |
-|   LUT as Logic           |     0.016 |     9256 |     63400 |           14.60 |
-|   CARRY4                 |     0.001 |      674 |     15850 |            4.25 |
-|   Register               |    <0.001 |     7795 |    126800 |            6.15 |
+| Clocks                   |     0.018 |       46 |       --- |             --- |
+| Slice Logic              |     0.010 |    18903 |       --- |             --- |
+|   LUT as Logic           |     0.009 |     7533 |     63400 |           11.88 |
+|   Register               |    <0.001 |     6708 |    126800 |            5.29 |
 |   LUT as Distributed RAM |    <0.001 |     1234 |     19000 |            6.49 |
-|   LUT as Shift Register  |    <0.001 |       64 |     19000 |            0.34 |
-|   F7/F8 Muxes            |    <0.001 |      462 |     63400 |            0.73 |
+|   CARRY4                 |    <0.001 |      281 |     15850 |            1.77 |
+|   F7/F8 Muxes            |    <0.001 |      678 |     63400 |            1.07 |
+|   LUT as Shift Register  |    <0.001 |       20 |     19000 |            0.11 |
 |   Others                 |     0.000 |      253 |       --- |             --- |
-| Signals                  |     0.017 |    17532 |       --- |             --- |
-| Block RAM                |     0.003 |       11 |       135 |            8.15 |
+| Signals                  |     0.012 |    14916 |       --- |             --- |
+| Block RAM                |     0.006 |       17 |       135 |           12.59 |
 | MMCM                     |     0.215 |        2 |         6 |           33.33 |
 | PLL                      |     0.090 |        1 |         6 |           16.67 |
-| DSPs                     |    <0.001 |        2 |       240 |            0.83 |
+| DSPs                     |     0.003 |       10 |       240 |            4.17 |
 | I/O                      |     0.511 |       66 |       210 |           31.43 |
 | PHASER                   |     0.070 |       14 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.108 |          |           |                 |
-| Total                    |     1.057 |          |           |                 |
+| Total                    |     1.049 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -80,7 +80,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.100 |       0.082 |      0.018 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.091 |       0.073 |      0.018 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.265 |       0.247 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -89,7 +89,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.001 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.022 |       0.002 |      0.020 |       NA    | Unspecified | NA         |
@@ -192,26 +192,24 @@ Table of Contents
 +------------------------+-----------+
 | Name                   | Power (W) |
 +------------------------+-----------+
-| top                    |     0.949 |
-|   cachecontroller_inst |     0.915 |
+| top                    |     0.940 |
+|   cachecontroller_inst |     0.917 |
 |     cache_inst         |     0.001 |
 |     clk_gen            |     0.127 |
 |       inst             |     0.127 |
 |     dram_buf           |     0.004 |
 |       request_fifo     |     0.003 |
 |       response_fifo    |     0.001 |
-|     dram_controller    |     0.783 |
-|       mig              |     0.783 |
-|   mips_core            |     0.032 |
-|     fpu_unit           |     0.028 |
+|     dram_controller    |     0.784 |
+|       mig              |     0.784 |
+|   mips_core            |     0.022 |
+|     fpu_unit           |     0.019 |
 |       u_fadd           |     0.003 |
-|       u_fdiv           |     0.010 |
+|       u_fdiv           |     0.007 |
 |       u_fmul           |     0.001 |
-|       u_fsqrt          |     0.009 |
-|       u_ftoi           |     0.002 |
+|       u_fsqrt          |     0.005 |
 |       u_itof           |     0.001 |
-|     rf_unit            |     0.002 |
-|   uart_fifo_inst       |     0.001 |
+|     rf_unit            |     0.001 |
 +------------------------+-----------+
 
 

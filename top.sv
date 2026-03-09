@@ -46,54 +46,9 @@ module top (
     end
 
     // --- 究極のLEDデバッグ ---
-    //assign led[15] = calib_done;
-    //assign led[14] = heartbeat[27];
-    //assign led[13] = rst;
-    //assign led[12] = uart_tx_o;
-    //assign led[11] = cpu_leds[15];
-    //assign led[10] = cpu_leds[14];
-    //assign led[9]  = is_uart_addr;
-    //assign led[8:0] = cpu_leds[8:0];
-
     assign led[15] = cpu_leds[15]; // ストール判定 (1のはず)
-    //assign led[14] = uart_tx_o;    // TX状態 (1のはず)
-    // ★送信カウンターをやめて、PCの下位ビットを表示！
-    assign led[14:0] = cpu_leds[14:0]; // PCのインデックス (14bit)
+    assign led[14:0] = cpu_leds[14:0]; // PCのインデックス (14bit) に戻す！
 
-  /*  // ================================================================
-    // ★究極のデバッグカウンター：UARTから何ワード読み取ったか数える
-    // ================================================================
-    logic [31:0] uart_read_count;
-    always_ff @(posedge cpu_clk) begin
-        if (!rst) begin
-            uart_read_count <= 32'd0;
-        end else if (uart_re && req_rdy) begin // CPUがUARTのデータを正確に1つ受け取った瞬間
-            uart_read_count <= uart_read_count + 1;
-        end
-    end
-
-    assign led[15] = cpu_leds[15]; // stall_pc を最優先で確認
-    assign led[14] = uart_tx_o;    // 画像データが送られているか確認
-    //assign led[13:0] = cpu_leds[13:0]; // PCのインデックス (14bit)
-    assign led[13:0] = uart_read_count[13:0]; // ★PCの代わりに、読み取った総ワード数を表示！
-*/
-
-/*    // ================================================================
-    // ★最終兵器：UARTへ何文字送信したか数えるカウンター
-    // ================================================================
-    logic [31:0] uart_write_count;
-    always_ff @(posedge cpu_clk) begin
-        if (!rst) begin
-            uart_write_count <= 32'd0;
-        end else if (uart_we && uart_tx_ready) begin // CPUがUARTに1文字書き込んだ瞬間
-            uart_write_count <= uart_write_count + 1;
-        end
-    end
-
-    assign led[15] = cpu_leds[15]; // ストール判定
-    assign led[14] = uart_tx_o;    // TXピンの状態
-    assign led[13:0] = uart_write_count[13:0]; // ★受信カウンターから「送信カウンター」に変更！
-*/
     // ----------------------------------------------------------------
     // アドレスデコード（MMIO）ロジック
     // ----------------------------------------------------------------
@@ -105,20 +60,16 @@ module top (
     // ★念のためのガード: メモリ準備前は書き込み信号も強制遮断
     logic uart_we;
     assign uart_we = writetrigger && is_uart_addr;
-    //assign uart_we = writetrigger && is_uart_addr && calib_done;
 
     logic cache_writetrigger;
     logic cache_readtrigger;
-    //assign cache_writetrigger = writetrigger && !is_uart_addr;
-    //assign cache_readtrigger  = readtrigger  && !is_uart_addr;
     assign cache_writetrigger = writetrigger && !is_uart_addr && calib_done;
     assign cache_readtrigger  = readtrigger  && !is_uart_addr && calib_done;
 
     logic cache_req_rdy;
 
-
     // ----------------------------------------------------------------
-    // ★修正: UART受信 (Read) ロジックの完全直結化
+    // UART受信 (Read) ロジックの完全直結化
     // ----------------------------------------------------------------
     logic [7:0] rx_data_out;
     logic       rx_data_valid;
@@ -129,35 +80,43 @@ module top (
 
     // CPUがUARTアドレスを読もうとしている時だけ、UART_RXに「読み取り要求(rd_en)」を送る
     logic uart_re;
-    /// ★究極の修正: CPUがFPUの計算でフリーズしている時だけ、空Pop(掃除機現象)を防ぐ！
     assign uart_re = readtrigger && is_uart_addr && !cpu_fpu_stall;
-    //assign uart_re = readtrigger && is_uart_addr;
-    //assign uart_re = readtrigger && is_uart_addr && calib_done;
-    // CPUがストール中(cpu_leds[15]==1)は、FIFOの空Pop（蒸発）を防ぐために要求を止める！
-    //assign uart_re = readtrigger && is_uart_addr && !cpu_leds[15];
 
-    // ★修正: DDR準備前(calib_done=0)にメモリアクセスしようとしたら、
+    // DDR準備前(calib_done=0)にメモリアクセスしようとしたら、
     // キャッシュの返事を待たずに強制的にReady=0にしてCPUを安全に待機させる
     logic actual_cache_rdy;
     assign actual_cache_rdy = calib_done ? cache_req_rdy : 1'b0;
 
-    // ★重要: Ready信号の生成
-    // UARTアクセス時: Readなら rx_data_valid (データ到着済)、Writeなら tx_ready (送信可能) を見る
-    //assign req_rdy = is_uart_addr ? (writetrigger ? uart_tx_ready : rx_data_valid) : cache_req_rdy;
-    //assign req_rdy = is_uart_addr ? (writetrigger ? uart_tx_ready : rx_data_valid) 
-      //                            : actual_cache_rdy;
+    // ================================================================
+    // ★究極の解決策：UARTタイムアウト（オートEOF）回路
+    // ================================================================
+    logic [31:0] uart_timeout_cnt;
+    always_ff @(posedge cpu_clk) begin
+        if (!rst) begin
+            uart_timeout_cnt <= 0;
+        end else if (is_uart_addr && readtrigger && !fifo_cpu_valid) begin
+            // UART受信待ちでデータが来ない間カウントアップ (3,000,000クロック = 0.1秒)
+            // Pythonスクリプトの送信終了を確実に検知する
+            if (uart_timeout_cnt < 32'd3_000_000) begin
+                uart_timeout_cnt <= uart_timeout_cnt + 1;
+            end
+        end else begin
+            uart_timeout_cnt <= 0;
+        end
+    end
 
-    // ★修正: Read時はFIFOの fifo_cpu_valid を見てストール解除を判断する
-    assign req_rdy = is_uart_addr ? (writetrigger ? uart_tx_ready : fifo_cpu_valid) 
+    // 0.1秒待っても来なければ強制的に -1 (0xFFFFFFFF) を生成するフラグ
+    wire force_minus_one = (uart_timeout_cnt >= 32'd3_000_000);
+
+    // ★修正: Read時は、FIFOのデータがあるか、タイムアウトした時に Ready を返す
+    assign req_rdy = is_uart_addr ? (writetrigger ? uart_tx_ready : (fifo_cpu_valid || force_minus_one)) 
                                   : actual_cache_rdy;
 
-    // 読み出しデータのMUX
-    //assign cpu_read_data = is_uart_addr ? {24'd0, rx_data_out} : cache_rdata;
+    // ★修正: タイムアウト時は強制的に -1 (0xFFFFFFFF) をCPUに渡す！
+    assign cpu_read_data = is_uart_addr ? (force_minus_one ? 32'hFFFFFFFF : fifo_cpu_data) : cache_rdata;
+    // ================================================================
 
-    // ★修正: CPUにはFIFOから出てきた完璧な32ビットデータを渡す！
-    assign cpu_read_data = is_uart_addr ? fifo_cpu_data : cache_rdata;
-
-    logic cpu_fpu_stall; // ★これを追加
+    logic cpu_fpu_stall;
 
     // ----------------------------------------------------------------
     // モジュール接続
@@ -172,7 +131,7 @@ module top (
         .mem_wdata(input_data),
         .mem_we(writetrigger),
         .mem_re(readtrigger),
-        .stall_fpu_out(cpu_fpu_stall) // ★これを追加！
+        .stall_fpu_out(cpu_fpu_stall)
     );
 
     // --- UART TX モジュール ---
@@ -197,13 +156,12 @@ module top (
         .clk(cpu_clk),
         .rst(rst),
         .rx_in(uart_rx_i),
-        // ★修正: CPUの読み取り要求を、UART_RXの新設したrd_enポートに繋ぐ！
-        .rd_en(uart_rx_rd_en), // ★FIFOが要求を出すように変更
+        .rd_en(uart_rx_rd_en),
         .data_out(rx_data_out),
         .data_valid(rx_data_valid)
     );
 
-    // ★追加: 32bit結合＆FIFOモジュール
+    // 32bit結合＆FIFOモジュール
     uart_word_fifo uart_fifo_inst (
         .clk(cpu_clk),
         .rst(rst),
@@ -233,7 +191,7 @@ module top (
         .ddr2_odt(ddr2_odt),
         
         .clk(clk),
-        .reset_n(rst),// ※ここは変更しない！(キャッシュとMIGは大元のリセットで動き始める必要があるため)
+        .reset_n(rst),
         
         .writetrigger(cache_writetrigger),
         .readtrigger(cache_readtrigger),
@@ -247,4 +205,3 @@ module top (
     );
 
 endmodule
-

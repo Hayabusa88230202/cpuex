@@ -25,6 +25,7 @@ module ALUControl(
                     6'b100110: ALUOut = 4'b0011; // xor
                     6'b100111: ALUOut = 4'b0010; // nor
                     6'b101010: ALUOut = 4'b0110; // slt
+                    6'b000011: ALUOut = 4'b1101; // ★ sra 用のALU制御コードを追加
                     default:   ALUOut = 4'bxxxx; // 未定義のfunctはDon't Care
                 endcase
             end

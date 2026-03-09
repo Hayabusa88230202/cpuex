@@ -41,6 +41,7 @@ module FPU_Top (
     wire is_fdiv   = is_fmt_s && (funct == 6'h03);
     wire is_fsqrt  = is_fmt_s && (funct == 6'h04);
     wire is_fabs   = is_fmt_s && (funct == 6'h05);
+    wire is_fmove  = is_fmt_s && (funct == 6'h06); // ★これを追加！
     wire is_fneg   = is_fmt_s && (funct == 6'h07);
     wire is_floor  = is_fmt_s && (funct == 6'h0F);
     wire is_ftoi   = is_fmt_s && (funct == 6'h24);
@@ -66,10 +67,13 @@ module FPU_Top (
 
     logic [31:0] fpu_val_s, fpu_val_t;
     always_comb begin
-        if (internal_we && (internal_waddr == fs)) fpu_val_s = internal_wdata;
+        // ★ 究極の修正: flw (ext_we) からEXステージへのフォワーディングを追加！
+        if (ext_we && (ext_waddr == fs)) fpu_val_s = ext_wdata;
+        else if (internal_we && (internal_waddr == fs)) fpu_val_s = internal_wdata;
         else fpu_val_s = fpu_regs[fs];
 
-        if (internal_we && (internal_waddr == ft)) fpu_val_t = internal_wdata;
+        if (ext_we && (ext_waddr == ft)) fpu_val_t = ext_wdata;
+        else if (internal_we && (internal_waddr == ft)) fpu_val_t = internal_wdata;
         else fpu_val_t = fpu_regs[ft];
     end
 
@@ -95,7 +99,7 @@ module FPU_Top (
     // 3. 演算ユニット制御
     // =========================================================
     enum logic [1:0] {IDLE, BUSY} state;
-    wire start_arith = (state == IDLE) && (is_fadd | is_fsub | is_fmul | is_fdiv | is_fsqrt | is_ftoi | is_itof | is_fneg | is_fabs | is_floor | is_c_eq | is_c_lt | is_c_le);
+    wire start_arith = (state == IDLE) && (is_fadd | is_fsub | is_fmul | is_fdiv | is_fsqrt | is_ftoi | is_itof | is_fneg | is_fabs | is_floor | is_c_eq | is_c_lt | is_c_le | is_fmove);
     
     // ★修正: itofの場合はGPRからの入力(cpu_rdata1_ex)を使う！
     wire [31:0] op_a = is_itof ? cpu_rdata1_ex : reg_rdata_s;
@@ -121,6 +125,12 @@ module FPU_Top (
     always_ff @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin res_abs <= 0; val_abs <= 0; end
         else begin val_abs <= start_arith && is_fabs; res_abs <= {1'b0, op_a[30:0]}; end
+    end
+
+    logic [31:0] res_fmove; logic val_fmove;
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin res_fmove <= 0; val_fmove <= 0; end
+        else begin val_fmove <= start_arith && is_fmove; res_fmove <= op_a; end
     end
 
     logic [31:0] res_floor; logic val_floor;
@@ -149,12 +159,13 @@ module FPU_Top (
     // =========================================================
     // 4. 結果の集約と書き戻し
     // =========================================================
-    wire any_valid = val_add | val_mul | val_div | val_sqrt | val_ftoi | val_itof | val_neg | val_abs | val_floor | val_cmp;
+    wire any_valid = val_add | val_mul | val_div | val_sqrt | val_ftoi | val_itof | val_neg | val_abs | val_floor | val_cmp | val_fmove;
     logic [31:0] result_mux;
     always_comb begin
         if (val_add) result_mux = res_add; else if (val_mul) result_mux = res_mul; else if (val_div) result_mux = res_div;
         else if (val_sqrt) result_mux = res_sqrt; else if (val_ftoi) result_mux = res_ftoi; else if (val_itof) result_mux = res_itof;
         else if (val_neg) result_mux = res_neg; else if (val_abs) result_mux = res_abs; else if (val_floor) result_mux = res_floor;
+        else if (val_fmove) result_mux = res_fmove; // ★これを追加！
         else result_mux = 32'b0;
     end
 

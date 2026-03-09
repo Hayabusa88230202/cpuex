@@ -20,6 +20,7 @@ module ALU (
             4'b1000: Result = (signed'(A) > signed'(B)) ? 32'd1 : 32'd0; // sgt (Set Greater Than) : A > B なら 1
             // 即値の下位16bitを上位に持っていき、下位を0埋め
             4'b1001: Result = {B[15:0], 16'b0};
+            4'b1101: Result = $signed(B) >>> ShiftAmount;
             default: Result = 32'b0;
         endcase
     end

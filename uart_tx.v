@@ -8,13 +8,12 @@ module uart_tx #(
   input  wire       clk,
   input  wire       rst,        // アクティブロー
   input  wire [7:0] data_in,
-  input  wire       tx_enable,    // 1クロックパルスで送信開始
+  input  wire       tx_enable,    // ★レベル駆動（1なら送信開始）
   output reg        tx_out,
   output reg        tx_busy,
   output wire       tx_ready      // 次の送信が可能ならHigh
 );
 
-  // ステート定義
   localparam S_IDLE  = 3'd0;
   localparam S_START = 3'd1;
   localparam S_DATA  = 3'd2;
@@ -24,28 +23,23 @@ module uart_tx #(
   reg [2:0] bit_idx;
   reg [7:0] tx_data;
   reg [15:0] clk_cnt;
-  reg prev_tx_enable; // ★追加
-  wire tx_trigger = (tx_enable && !prev_tx_enable); // ★追加
-
 
   assign tx_ready = (state == S_IDLE);
 
   always @(posedge clk) begin
     if (!rst) begin
-      tx_out   <= 1'b1;
-      tx_busy  <= 1'b0;
-      state    <= S_IDLE;
-      bit_idx  <= 3'd0;
-      clk_cnt  <= 16'd0;
-      tx_data  <= 8'd0;
-      prev_tx_enable <= 1'b0; // ★追加
+      tx_out  <= 1'b1;
+      tx_busy <= 1'b0;
+      state   <= S_IDLE;
+      bit_idx <= 3'd0;
+      clk_cnt <= 16'd0;
+      tx_data <= 8'd0;
     end else begin
-      prev_tx_enable <= tx_enable; // ★追加
       case (state)
         S_IDLE: begin
           tx_out  <= 1'b1;
           tx_busy <= 1'b0;
-          if (tx_trigger) begin // ★ tx_enable から tx_trigger に変更
+          if (tx_enable) begin // ★ 究極の修正: エッジ検出を削除！1なら即座に反応させる！
             tx_data <= data_in;
             tx_busy <= 1'b1;
             state   <= S_START;
@@ -89,5 +83,4 @@ module uart_tx #(
       endcase
     end
   end
-
 endmodule

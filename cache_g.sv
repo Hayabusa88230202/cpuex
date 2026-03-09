@@ -48,10 +48,6 @@ module cache (
         end
     end
 
-    // ====================================================================
-    // ★削除: 以前のエッジ検出ロジック(left_prev, read_riseなど)は全て削除
-    // ====================================================================
-
     localparam IDLE = 5'b00000;
     localparam COMP = 5'b00010;
     localparam WAIT_READ_LINE_FOR_READ = 5'b00100;
@@ -60,8 +56,8 @@ module cache (
     localparam WAIT_WRITE_BACK_FOR_WRITE = 5'b01001;
     localparam WAIT_READ_RSP_FOR_WRITE = 5'b10001;
     localparam WAIT_READ_RSP_FOR_READ = 5'b10000;
-    localparam WAIT_BETWEEN_REQS_FOR_READ = 5'b11000;  // ★追加
-    localparam WAIT_BETWEEN_REQS_FOR_WRITE = 5'b11001; // ★追加
+    localparam WAIT_BETWEEN_REQS_FOR_READ = 5'b11000;  // ★追加: 連続リクエスト防止用
+    localparam WAIT_BETWEEN_REQS_FOR_WRITE = 5'b11001; // ★追加: 連続リクエスト防止用
     localparam DONE = 5'b11111;
 
     logic [4:0] state = IDLE;
@@ -72,15 +68,10 @@ module cache (
     logic [127:0] cache_data_reg; 
     logic dirty_bit_reg;
     logic valid_bit_reg;
-    // 上の方にレジスタを追加
-    logic [3:0] wait_counter;
 
-    // ★修正: 分かりやすい名前に変更し、リクエストを保持するレジスタ
     logic read_req_reg;
     logic write_req_reg;
     
-    // ★修正: req_rdy_reg は遅延の元になるため使わず、以下のゼロ遅延ロジックを使う
-    // 完全にIDLEで何もしていない時か、DONEの時だけReadyを返す
     assign req_rdy = (state == DONE) || (state == IDLE && !readtrigger && !writetrigger);
     
     always_ff @(posedge clk) begin
@@ -93,7 +84,6 @@ module cache (
         end else begin
             case (state)
                 IDLE: begin
-                    // ★究極の修正: trigger(レベル)が1なら即座に反応し、連続アクセスを可能にする！
                     if (readtrigger || writetrigger) begin
                         read_req_reg  <= readtrigger;
                         write_req_reg <= writetrigger;
@@ -125,7 +115,6 @@ module cache (
                             if (valid_bit_reg && dirty_bit_reg) begin
                                 // Write Back
                                 fifo.req.cmd <= 1'b0; 
-                                // ★修正2: 32ビットに揃えてアドレスズレを防ぐ
                                 fifo.req.addr <= {cache_tag_reg, input_addr_reg[11:4], 4'b0000};
                                 fifo.req.data <= cache_data_reg;
                                 fifo.req_en <= 1'b1;
@@ -133,7 +122,6 @@ module cache (
                             end else begin
                                 // Allocate (Read)
                                 fifo.req.cmd <= 1'b1; 
-                                // ★修正2
                                 fifo.req.addr <= {input_addr_reg[31:4], 4'b0000};
                                 fifo.req.data <= 128'b0;
                                 fifo.req_en <= 1'b1;
@@ -156,7 +144,6 @@ module cache (
                             if (valid_bit_reg && dirty_bit_reg) begin
                                 // Write Back
                                 fifo.req.cmd <= 1'b0;
-                                // ★修正2
                                 fifo.req.addr <= {cache_tag_reg, input_addr_reg[11:4], 4'b0000};
                                 fifo.req.data <= cache_data_reg;
                                 fifo.req_en <= 1'b1;
@@ -164,7 +151,6 @@ module cache (
                             end else begin
                                 // Allocate (Read)
                                 fifo.req.cmd <= 1'b1;
-                                // ★修正2
                                 fifo.req.addr <= {input_addr_reg[31:4], 4'b0000};
                                 fifo.req.data <= 128'b0;
                                 fifo.req_en <= 1'b1;
@@ -174,65 +160,39 @@ module cache (
                     end
                 end
 
-               /* WAIT_WRITE_BACK_FOR_READ: begin
-                    if (fifo.req_rdy) begin
-                        fifo.req.cmd <= 1'b1; // read
-                        // ★修正2
-                        fifo.req.addr <= {input_addr_reg[31:4], 4'b0000};
-                        fifo.req.data <= 128'b0;
-                        fifo.req_en <= 1'b1;
-                        state <= WAIT_READ_LINE_FOR_READ;
-                    end
-                end
-
-                WAIT_WRITE_BACK_FOR_WRITE: begin
-                    if (fifo.req_rdy) begin
-                        fifo.req.cmd <= 1'b1; // read
-                        // ★修正2
-                        fifo.req.addr <= {input_addr_reg[31:4], 4'b0000};
-                        fifo.req.data <= 128'b0;
-                        fifo.req_en <= 1'b1;
-                        state <= WAIT_READ_LINE_FOR_WRITE;
-                    end
-                end*/
-
+                // ====================================================================
+                // ★究極の修正: Write-Back後に必ず req_en を 0 にして、1クロックのエッジを作る
+                // ====================================================================
                 WAIT_WRITE_BACK_FOR_READ: begin
                     if (fifo.req_rdy) begin
-                        fifo.req_en <= 1'b0; // ★一旦 req_en を下げてFIFOにエッジを認識させる
-                        wait_counter <= 4'd10; // ★10クロック待機させる
+                        fifo.req_en <= 1'b0; // ★ここで落とす！
                         state <= WAIT_BETWEEN_REQS_FOR_READ;
                     end
                 end
-                WAIT_BETWEEN_REQS_FOR_READ: begin // ★1クロック休んだらReadを発行
-                    if (wait_counter > 0) begin
-                        wait_counter <= wait_counter - 1; // ★待機中
-                    end else begin
-                        fifo.req.cmd <= 1'b1; // read
-                        fifo.req.addr <= {input_addr_reg[31:4], 4'b0000};
-                        fifo.req.data <= 128'b0;
-                        fifo.req_en <= 1'b1;
-                        state <= WAIT_READ_LINE_FOR_READ;
-                    end
+
+                WAIT_BETWEEN_REQS_FOR_READ: begin 
+                    fifo.req.cmd <= 1'b1; // read
+                    fifo.req.addr <= {input_addr_reg[31:4], 4'b0000};
+                    fifo.req.data <= 128'b0;
+                    fifo.req_en <= 1'b1; // ★ここで再度立てることで、確実な立ち上がりエッジが発生！
+                    state <= WAIT_READ_LINE_FOR_READ;
                 end
 
                 WAIT_WRITE_BACK_FOR_WRITE: begin
                     if (fifo.req_rdy) begin
-                        fifo.req_en <= 1'b0; // ★一旦 req_en を下げる
-                        wait_counter <= 4'd10; // ★10クロック待機させる
+                        fifo.req_en <= 1'b0; // ★ここで落とす！
                         state <= WAIT_BETWEEN_REQS_FOR_WRITE;
                     end
                 end
-                WAIT_BETWEEN_REQS_FOR_WRITE: begin // ★1クロック休んだらReadを発行
-                    if (wait_counter > 0) begin
-                        wait_counter <= wait_counter - 1; // ★待機中
-                    end else begin
-                        fifo.req.cmd <= 1'b1; // read
-                        fifo.req.addr <= {input_addr_reg[31:4], 4'b0000};
-                        fifo.req.data <= 128'b0;
-                        fifo.req_en <= 1'b1;
-                        state <= WAIT_READ_LINE_FOR_WRITE;
-                    end
+
+                WAIT_BETWEEN_REQS_FOR_WRITE: begin 
+                    fifo.req.cmd <= 1'b1; // read
+                    fifo.req.addr <= {input_addr_reg[31:4], 4'b0000};
+                    fifo.req.data <= 128'b0;
+                    fifo.req_en <= 1'b1; // ★ここで再度立てる！
+                    state <= WAIT_READ_LINE_FOR_WRITE;
                 end
+                // ====================================================================
 
                 WAIT_READ_LINE_FOR_WRITE: begin
                     if (fifo.req_rdy) begin
